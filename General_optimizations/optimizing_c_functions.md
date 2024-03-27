@@ -1,5 +1,5 @@
 
-# Optimizing C functions
+# Helium optimization topics #2 - Optimizing C functions
 
 ## Some key concepts
 
