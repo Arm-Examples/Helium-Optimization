@@ -20,11 +20,6 @@ To maximize the performance, the processor pipeline allows overlapping of operat
 More information about the Cortex-M55 processor can be found in this paper: [Introduction to the Arm Cortex-M55 Processor](https://armkeil.blob.core.windows.net/developer/Files/pdf/white-paper/introduction-to-arm-cortex-m55-processor.pdf)
 
 Generally, C compilers should be able to schedule instructions to interleave different types of instructions to maximize the overlapping. However, if you need to write optimized code at low-level (either using intrinsic functions or inline assembly), you need to take care to interleave different types of instructions by avoiding back-to-back memory accesses or back-to-back data processing that use the same ALU functions.
-For software developers that want to optimize code at low level, the following Software Optimization Guides are available:
-
-- [Cortex-M85 Software Optimization Guide](https://developer.arm.com/documentation/107950/0100/)
-- [Cortex-M55 Software Optimization Guide](https://developer.arm.com/documentation/102692/latest/)
-- Cortex-M52 Software Optimization Guide: (REVISIT: Link not available yet)
 
 ## Vectorize a data processing function
 
@@ -81,19 +76,6 @@ In summary : to vectorize the algorithm you need to understand how the data can 
 
 At the end, you must be able to compute with the data you have in a vector and it depends on what you want to compute. Some slicing strategy may be good from a memory point of view but does not map very well on what you are trying to compute.
 
-## Instruction alignment
-
-For best performance, Helium instructions (especially those inside a critical loop) should be aligned to 32-bit boundaries. The software would still work if the Helium instructions were unaligned, but this can cause stall cycles in loops even when the Low Overhead Branch (LOB) extension is used. This is usually taken care by C compilers. But if you are creating inline assembly code, you need to handle the alignment manually.
-
-## Data alignment
-
-When using Helium instructions for data processing, in some cases data alignment can affect the performance:
-
-- For minimum, vector data should be aligned to 32-bit boundaries. This is a requirement of the Helium instructions.
-- For Armv8.1-M processors with dual-beat Helium implementations (i.e. Cortex-M55 and Cortex-M85), in some cases aligning vector data to 64-bit boundaries can gain a small performance improvement. For example:
-  - When the vector data is expected to be fetched from the main memory instead of cache, having the data aligned to the bus width avoids an additional data access for the unaligned data.
-  - When the processing involves certain 64-bit load store instructions
-
 ## Minimizing memory accesses (unrolling, data grouping, temporary  copy)
 
 When data is not contiguous in memory, you cannot load it with one vector load and several accesses are needed.
@@ -102,7 +84,7 @@ If this data cannot be reused in lot of instructions you won't be able to amorti
 
 Let's take the example of a matrix multiply : you can do a dot product between 4 rows and one column to generate 4 samples of one column of the result. In that case, the data loaded from the column is reused 4 times with 4 different rows.
 
-The overhead of loading the non contiguous data is amortized on the 4 computations. 
+The overhead of loading the non contiguous data is amortized on the 4 computations.
 
 Another possibility, when it makes sense, is to copy the non contiguous data into a temporary buffer where the copy will be contiguous. Then, the algorithm can work from this temporary copy.
 
@@ -127,15 +109,3 @@ Use of `restrict` keyword in the API of the functions can help a lot the compile
 It is advised to compile with `-Ofast`
 
 At this stage auto-vectorization support for Helium in GCC is still work in progress. For the time being, use Arm AC6 or LLVM based compiler for best results.
-
-## Considerations related to processor’s memory systems
-
-Many processing tasks like DSP and NN are data intensive, as a result, it is crucial to select the right memory types for data storage to ensure high data access performance (including high bandwidth and low latency). Otherwise, the processing performance can degrade significantly. For example, the I-TCM interface on the Cortex-M55 processor is only 32-bit width and the processor can access 64-bit of data per clock cycle. As a result, it is not a good idea to put read-only data coefficients in the I-TCM if the data is to be read using vector load instructions, even though the data is a part of a DSP function – copying the data into the D-TCM or system memory can help resolve this memory bandwidth issue.
-
-To help performance, the D-caches of the Cortex-M55 and Cortex-M85 processors support data prefetching. In the Cortex-M55, the data prefetcher in the D-cache can only detect a linear access pattern with a constant stride (-2, -1, +1, +2 of the data array). Since a data processing function can access more than one stream of data, other data streams need to be placed in TCMs or uncacheable buffer to make use of the data prefetching.
-
-The data prefetcher in the Cortex-M85 supports an additional prefetching mode call next-line mode, which is more performant. The prefetcher behaviors in the Cortex-M55 and Cortex-M85 are programmable. For more information, please refer to the Prefetch Control Register (PFCR) in the processor’s Technical Reference Manual.
-
-In the Cortex-M55 and Cortex-M85 processors, the D-TCM is divided into 4 banks (selected by bit 2 and bit 3 of the address). Because these processors can handle two load or two store operations when executing scatter store/gather load instructions, if the two accesses are targeting the same D-TCM bank, there would be a conflict and causes delay. Therefore, when using scatter store/gather load instructions, you might need to optimize the data layout to avoid this issue. The bus interface of the Cortex-M52 processor can only handle one transfer at a time, so this consideration is not applicable to the Cortex-M52 processor.
-
-Another side effect of the D-TCM banking in Cortex-M52 and Cortex-M55 is that right after a store to a D-TCM bank, the read to the same D-TCM could be delayed. To avoid this conflict, you can adjust data alignment so that such read after store does not reach the same D-TCM bank. This aspect does not affect memory accesses on AXI or D-TCM interface on Cortex-M85.
