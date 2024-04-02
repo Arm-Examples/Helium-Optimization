@@ -1705,11 +1705,19 @@ By processing TARMAC trace in correlating program counter with function
 name, a JSON output containing function name, function start timestamp
 and duration can be generated.
 
-A utility script can be found in [arm_tarmac_2_chrometracing](tools/arm_tarmac_2_chrometracing.py)
+A utility python script can be found in [arm_tarmac_2_chrometracing.py](tools/arm_tarmac_2_chrometracing.py).
+This one consumes a symbol file allowing to correlate TARMAC program counter and local function, and TARMAC log.
+
+Example:
+```shell
+# symbol file extraction
+fromelf -s audiomark_app.axf > audiomark_app_sse300.sym
+# conversion
+python arm_tarmac_2_chrometracing.py audiomark_app_sse300.sym audiomark_app_sse300.tarmac audiomark_app_sse300.json
+```
 
 
-
-An example of such JSON trace can be found below:
+An extract of such JSON trace can be found below:
 
 ```json
 {"name": "__aeabi_memclr8           ", "cat": "arm", "ph": "X", "ts": 36316968.000, "dur": 8992.000, "pid": 1, "tid": 1,  "args": {}},
@@ -1730,11 +1738,20 @@ An example of such JSON trace can be found below:
 {"name": "filterbank_compute_psd16  ", "cat": "arm", "ph": "X", "ts": 36451052.000, "dur": 5420.000, "pid": 1, "tid": 1,  "args": {}},
 {"name": "arm_cmplx_mult_real_f32   ", "cat": "arm", "ph": "X", "ts": 36510512.000, "dur": 4644.000, "pid": 1, "tid": 1,  "args": {}},
 {"name": "arm_cfft_f32              ", "cat": "arm", "ph": "X", "ts": 36548388.000, "dur": 20244.000, "pid": 1, "tid": 1,  "args": {}},
-
+...
 ```
 
-Another example with 2 traces (Audiomark with Ethos U55-128 and
-Audiomark with CM55 only)
+An additional tool, [arm_json_merge.py](tools/arm_json_merge.py), allows to merge multiple JSON trace logs and align timestamps in a single timeline to ease comparison.
+This can be used to compare several optimized code bases, visualize effects of NPU acceleration or to compare behaviour on different platforms.
+
+As an example, this command allows to merge 2 JSON traces with Audiomark running with Ethos U55-128 acceleration and Audiomark running on CM55 only,
+
+```shell
+# capture 2nd occurence of the ee_audiomark symbol inside audiomark_cm55_only and audiomark_cm55_with_u55 traces
+python arm_json_merge.py ee_audiomark 2 audiomark_sse300_vs_sse310.json audiomark_cm55_only.json  audiomark_cm55_with_u55.json
+```
+
+Here is the extract of the resulting JSON merged trace:
 
 ```json
  {"name": "ethosu_mutex_lock         ", "cat": "arm", "ph": "X", "ts": 525127.0, "dur": 4.001, "pid": 1, "tid": "m55_u55_128.json", "args": {}},
@@ -1772,6 +1789,59 @@ of instructions (containing cumulated duration). Relating program
 counter to source code (addr2line) allows to generate gprof-like
 line-by-line profiling.
 
+### Detailed Usage of the Chrome Trace Converter with Audiomark on AVH
+
+In order to demonstrate the complete process of converting tarmac data to Chrome format, we will utilize the Audiomark Beamformer (ABF) analysis as a baseline.
+
+- Corstone-300 ABF Binary generation
+
+The audiomark application and unit tests ARM binaries generation steps are  detailled [here](https://github.com/eembc/audiomark/blob/main/platform/cmsis/README.md)
+
+Under `./platform/cmsis`, issue the **cbuild** command from the CMSIS toolbox to start the compilation stage. Here we are selecting VHT-Corstone-300 target and ARM Compiler 6.22.
+
+```shell
+cbuild --context testabf.Release+VHT-Corstone-300 audiomark.csolution.yml --update-rte  --toolchain AC6@6.22
+```
+
+This will generate an image in `out/testabf/VHT-Corstone-300/Release/testabf.axf`
+
+- Tarmac log generation:
+
+We're using the standard Corstone-300 VHT command line and use an extra plugin providing TARMAC log capabilities.
+
+```shell
+VHT_MPS3_Corstone_SSE-300 -f model_config_sse300.txt  out/testabf/VHT-Corstone-300/Release/testabf.axf --plugin TarmacTrace.so -C TRACE.TarmacTrace.trace-file=testabf_sse300.tarmac
+```
+
+ - Tarmac log JSON conversion:
+
+After extracting the symbol file from the application image, we're using the `arm_tarmac_2_chrometracing.py` for converting the TARMAC log into JSON.
+
+ ```shell
+ # symbol file extraction
+fromelf -s out/testabf/VHT-Corstone-300/Release/testabf.axf > testabf_sse300.sym
+# conversion
+python arm_tarmac_2_chrometracing.py testabf_sse300.sym testabf_sse300.tarmac testabf_sse300.json
+ ```
+
+ - ABF timeline visualization
+
+ Open <u>chrome://tracing</u> URL under Google Chrome and click on the `Load` button for loading the generate JSON
+
+
+ ![](./images/media/chrome_tracing_load.png)
+
+Tracing tool commands help will be displayed by clicking on the `?` button.
+
+ ![](./images/media/chrome_tracing_help.png)
+
+Clicking on the `Self time` arrow allow to sort the top consuming functions.
+The duration assume a core running at 1MHz clock, so 100ms represent an equivalent of 100K cycles.
+
+It is important to re-emphasize that AVH/FVP **do not provide cycle accurate measurements**.
+
+
+Prebuilt Corstone-300 ABF images and tarmac logs are provided as examples in the [tools/examples/](tools/examples/) folder.
 
 
 ## ETM trace post-processing.
