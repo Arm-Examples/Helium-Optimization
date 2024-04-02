@@ -126,13 +126,13 @@ def usage():
 
     printf(
         """
-\033[4musage\033[0m : \033[31;1m armProfiler.py\033[00m image.sym pipe.log out.[json|csv]
+\033[4musage\033[0m : \033[31;1m arm_tarmac_2_chrometracing.py\033[00m image.sym tarmac.log out.[json|csv]
 """
     )
     printf(" where : \n")
     printf(" image.sym          : image symbols (fromelf -s)\n")
-    printf(" pipe.log           : pipeline model output\n")
-    printf(" out.[json|csv]     : processed csv or json trace output\n")
+    printf(" tarmac.log         : tarmac output\n")
+    printf(" out.[json|csv]     : processed csv or chrome tracing output\n")
     exit(2)
 
 
@@ -158,7 +158,7 @@ def main(argv):
     T32_INST_MIN_SIZE = 2
     partialFromelfEntry = ""
 
-    printf("ARM profiler\n")
+    printf("ARM tarmac to chrome tracing converter\n")
 
     if len(sys.argv) != 4:
         usage()

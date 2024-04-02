@@ -62,12 +62,12 @@ def usage():
 
     printf(
         """
-\033[4musage\033[0m : \033[31;1m mergeJsonTrace.py\033[00m symbol occurence merged.json files...
+\033[4musage\033[0m : \033[31;1m arm_json_merge.py\033[00m symbol occurrence merged.json files...
 """
     )
     printf(" where : \n")
     printf(" symbol             : symbol to merge\n")
-    printf(" occurence          : occurence\n")
+    printf(" occurrence         : occurrence\n")
     printf(" out.[json|csv]     : processed csv or json trace output\n")
     printf(" files ....         : files list\n")
     exit(2)
