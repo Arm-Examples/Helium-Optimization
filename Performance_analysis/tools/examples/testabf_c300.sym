@@ -1,0 +1,1301 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: testabf_c300.axf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x10001b45
+    Flags: EF_ARM_HASENTRY (0x05000002)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Conforms to Base float procedure-call standard
+
+    Built with
+    Component: Arm Compiler for Embedded 6.19 Tool: armasm [5e73cb00]
+    Component: Arm Compiler for Embedded 6.21 Tool: armlink [5ec1f800]
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 22
+
+    Program header offset: 876352 (0x000d5f40)
+    Section header offset: 876384 (0x000d5f60)
+
+    Section header string table index: 21
+
+========================================================================
+
+** Program header #0 (PT_LOAD) [PF_X + PF_W + PF_R + PF_ARM_ENTRY]
+    Size : 684632 bytes (353200 bytes in file)
+    Virtual address: 0x10000000 (Alignment 32)
+
+
+========================================================================
+
+** Section #1 'ER_CODE' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 180008 bytes (alignment 16)
+    Address: 0x10000000
+
+
+** Section #2 'ER_CODE_CMSE_VENEER_DUMMY' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 0 bytes (alignment 32)
+    Address: 0x1002bf40
+
+
+** Section #3 'CODE_WATERMARK' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 0 bytes
+    Address: 0x1002bf40
+
+
+** Section #4 'ER_DATA' (SHT_PROGBITS) [SHF_ALLOC]
+    Size   : 163992 bytes (alignment 8)
+    Address: 0x30000000
+
+
+** Section #5 'ER_DATA' (SHT_PROGBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 9168 bytes (alignment 4)
+    Address: 0x30028098
+
+
+** Section #6 'ER_DATA' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 1976 bytes (alignment 8)
+    Address: 0x3002ab58
+
+
+** Section #7 'ARM_LIB_HEAP' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 262144 bytes (alignment 8)
+    Address: 0x3002b310
+
+
+** Section #8 'ARM_LIB_STACK' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 65536 bytes (alignment 32)
+    Address: 0x3006b320
+
+
+** Section #9 'SRAM_WATERMARK' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 0 bytes
+    Address: 0x3007b320
+
+
+** Section #10 '.debug_abbrev' (SHT_PROGBITS)
+    Size   : 5600 bytes
+
+
+** Section #11 '.debug_frame' (SHT_PROGBITS)
+    Size   : 14868 bytes
+
+
+** Section #12 '.debug_info' (SHT_PROGBITS)
+    Size   : 93662 bytes
+
+
+** Section #13 '.debug_line' (SHT_PROGBITS)
+    Size   : 91109 bytes
+
+
+** Section #14 '.debug_loc' (SHT_PROGBITS)
+    Size   : 239521 bytes
+
+
+** Section #15 '.debug_ranges' (SHT_PROGBITS)
+    Size   : 10568 bytes
+
+
+** Section #16 '.debug_str' (SHT_PROGBITS)
+    Size   : 31743 bytes
+
+
+** Section #17 '.symtab' (SHT_SYMTAB)
+    Size   : 16112 bytes (alignment 4)
+    String table #18 '.strtab'
+    Last local symbol no. 614
+
+    Symbol table .symtab (1006 symbols, 614 local)
+
+      #  Symbol Name                Value      Bind  Sec  Type  Vis  Size
+    ========================================================================
+
+      1  $d.realdata                0x10000000   Lc    1   --   De 
+      2  $t                         0x100007c0   Lc    1   --   De 
+      3  $d                         0x1000081c   Lc    1   --   De 
+      4  $t                         0x10000824   Lc    1   --   De 
+      5  $d                         0x10000900   Lc    1   --   De 
+      6  $t                         0x10000908   Lc    1   --   De 
+      7  $d                         0x10000920   Lc    1   --   De 
+      8  $t                         0x10000924   Lc    1   --   De 
+      9  $d                         0x10000946   Lc    1   --   De 
+     10  $t                         0x10000950   Lc    1   --   De 
+     11  $d                         0x10000a14   Lc    1   --   De 
+     12  $t                         0x10000a18   Lc    1   --   De 
+     13  $d                         0x10000ae8   Lc    1   --   De 
+     14  $t                         0x10000af8   Lc    1   --   De 
+     15  $d                         0x10000b3c   Lc    1   --   De 
+     16  $t                         0x10000b40   Lc    1   --   De 
+     17  $d                         0x10000cb4   Lc    1   --   De 
+     18  $t                         0x10000cbc   Lc    1   --   De 
+     19  $d                         0x10000cc0   Lc    1   --   De 
+     20  $t                         0x10000cc4   Lc    1   --   De 
+     21  $d                         0x10000cc8   Lc    1   --   De 
+     22  $t                         0x10000ccc   Lc    1   --   De 
+     23  $d                         0x10000e38   Lc    1   --   De 
+     24  $t                         0x10000e3c   Lc    1   --   De 
+     25  $d                         0x10000fb6   Lc    1   --   De 
+     26  $t                         0x10000fe4   Lc    1   --   De 
+     27  $d                         0x10001110   Lc    1   --   De 
+     28  $t                         0x10001114   Lc    1   --   De 
+     29  $d                         0x10001176   Lc    1   --   De 
+     30  $t                         0x1000117c   Lc    1   --   De 
+     31  $d                         0x10001536   Lc    1   --   De 
+     32  $t                         0x1000153c   Lc    1   --   De 
+     33  $d                         0x10001614   Lc    1   --   De 
+     34  $t                         0x10001618   Lc    1   --   De 
+     35  $d                         0x10001620   Lc    1   --   De 
+     36  $t                         0x10001624   Lc    1   --   De 
+     37  $d                         0x10001732   Lc    1   --   De 
+     38  $t                         0x10001738   Lc    1   --   De 
+     39  $d                         0x1000183a   Lc    1   --   De 
+     40  $t                         0x10001840   Lc    1   --   De 
+     41  $d                         0x1000185a   Lc    1   --   De 
+     42  $t                         0x10001880   Lc    1   --   De 
+     43  $d                         0x10001896   Lc    1   --   De 
+     44  $t                         0x100018d0   Lc    1   --   De 
+     45  $t.19                      0x10001a14   Lc    1   --   De 
+     46  $d.10                      0x10001c74   Lc    1   --   De 
+     47  $t.2                       0x10001c84   Lc    1   --   De 
+     48  $d.13                      0x10001e30   Lc    1   --   De 
+     49  $t.66                      0x10001e40   Lc    1   --   De 
+     50  $d.67                      0x10001ea0   Lc    1   --   De 
+     51  $t.5                       0x10001ea4   Lc    1   --   De 
+     52  $d.7                       0x100022a0   Lc    1   --   De 
+     53  $t.8                       0x100022a4   Lc    1   --   De 
+     54  $d.9                       0x10002318   Lc    1   --   De 
+     55  $t.10                      0x1000231c   Lc    1   --   De 
+     56  $d.11                      0x100025d0   Lc    1   --   De 
+     57  $t.22                      0x10002600   Lc    1   --   De 
+     58  $d.1                       0x10002920   Lc    1   --   De 
+     59  $t.4                       0x10002930   Lc    1   --   De 
+     60  $d.37                      0x10002cec   Lc    1   --   De 
+     61  $t.19                      0x10002cf0   Lc    1   --   De 
+     62  $d.1                       0x10003578   Lc    1   --   De 
+     63  $t.2                       0x10003584   Lc    1   --   De 
+     64  $d.3                       0x100041c0   Lc    1   --   De 
+     65  $t.4                       0x100043c0   Lc    1   --   De 
+     66  $d.6                       0x10004878   Lc    1   --   De 
+     67  $t.7                       0x1000487c   Lc    1   --   De 
+     68  $d.8                       0x100048c0   Lc    1   --   De 
+     69  $t.0                       0x100048d8   Lc    1   --   De 
+     70  $d.1                       0x10004ae8   Lc    1   --   De 
+     71  $t.1                       0x10004b78   Lc    1   --   De 
+     72  $d.4                       0x10004dfc   Lc    1   --   De 
+     73  $t.0                       0x10004e0c   Lc    1   --   De 
+     74  $d.1                       0x10004e70   Lc    1   --   De 
+     75  $t                         0x10004e90   Lc    1   --   De 
+     76  $d                         0x10004ece   Lc    1   --   De 
+     77  $t                         0x10004ed8   Lc    1   --   De 
+     78  $d.realdata                0x10004ef6   Lc    1   --   De 
+     79  $d.realdata                0x30000000   Lc    4   --   De 
+     80  $d.realdata                0x3002b310   Lc    7   --   De 
+     81  $d.realdata                0x3006b320   Lc    8   --   De 
+     82  BasicMathFunctions.c       0x00000000   Lc  Abs  File  De 
+     83  BasicMathFunctionsF16.c    0x00000000   Lc  Abs  File  De 
+     84  BayesFunctions.c           0x00000000   Lc  Abs  File  De 
+     85  BayesFunctionsF16.c        0x00000000   Lc  Abs  File  De 
+     86  CommonTables.c             0x00000000   Lc  Abs  File  De 
+     87  CommonTablesF16.c          0x00000000   Lc  Abs  File  De 
+     88  ComplexMathFunctions.c     0x00000000   Lc  Abs  File  De 
+     89  ComplexMathFunctionsF16.c  0x00000000   Lc  Abs  File  De 
+     90  ControllerFunctions.c      0x00000000   Lc  Abs  File  De 
+     91  DistanceFunctions.c        0x00000000   Lc  Abs  File  De 
+     92  DistanceFunctionsF16.c     0x00000000   Lc  Abs  File  De 
+     93  FastMathFunctions.c        0x00000000   Lc  Abs  File  De 
+     94  FastMathFunctionsF16.c     0x00000000   Lc  Abs  File  De 
+     95  FilteringFunctions.c       0x00000000   Lc  Abs  File  De 
+     96  FilteringFunctionsF16.c    0x00000000   Lc  Abs  File  De 
+     97  InterpolationFunctions.c   0x00000000   Lc  Abs  File  De 
+     98  InterpolationFunctionsF16.c
+                                    0x00000000   Lc  Abs  File  De 
+     99  MatrixFunctions.c          0x00000000   Lc  Abs  File  De 
+    100  MatrixFunctionsF16.c       0x00000000   Lc  Abs  File  De 
+    101  QuaternionMathFunctions.c  0x00000000   Lc  Abs  File  De 
+    102  SVMFunctions.c             0x00000000   Lc  Abs  File  De 
+    103  SVMFunctionsF16.c          0x00000000   Lc  Abs  File  De 
+    104  StatisticsFunctions.c      0x00000000   Lc  Abs  File  De 
+    105  StatisticsFunctionsF16.c   0x00000000   Lc  Abs  File  De 
+    106  SupportFunctions.c         0x00000000   Lc  Abs  File  De 
+    107  SupportFunctionsF16.c      0x00000000   Lc  Abs  File  De 
+    108  TransformFunctions.c       0x00000000   Lc  Abs  File  De 
+    109  __arm_cp.6_11              0x10002318   Lc    1   --   De   0x4
+    110  _arm_radix4_butterfly_inverse_f32_mve
+                                    0x10001c91   Lc    1  Code  De   0x1a0
+    111  arm_rfft_4096_fast_init_f32
+                                    0x10002fd1   Lc    1  Code  De   0x7c
+    112  arm_rfft_2048_fast_init_f32
+                                    0x10002e65   Lc    1  Code  De   0x7c
+    113  arm_rfft_1024_fast_init_f32
+                                    0x10002d71   Lc    1  Code  De   0x7c
+    114  arm_rfft_512_fast_init_f32 0x1000304d   Lc    1  Code  De   0x7a
+    115  arm_rfft_256_fast_init_f32 0x10002ee1   Lc    1  Code  De   0x78
+    116  arm_rfft_128_fast_init_f32 0x10002ded   Lc    1  Code  De   0x76
+    117  arm_rfft_64_fast_init_f32  0x100030c9   Lc    1  Code  De   0x76
+    118  arm_rfft_32_fast_init_f32  0x10002f59   Lc    1  Code  De   0x76
+    119  TransformFunctionsF16.c    0x00000000   Lc  Abs  File  De 
+    120  arm_nn_activation_s16.c    0x00000000   Lc  Abs  File  De 
+    121  arm_relu6_s8.c             0x00000000   Lc  Abs  File  De 
+    122  arm_relu_q15.c             0x00000000   Lc  Abs  File  De 
+    123  arm_relu_q7.c              0x00000000   Lc  Abs  File  De 
+    124  arm_elementwise_add_s16.c  0x00000000   Lc  Abs  File  De 
+    125  arm_elementwise_add_s8.c   0x00000000   Lc  Abs  File  De 
+    126  arm_elementwise_mul_s16.c  0x00000000   Lc  Abs  File  De 
+    127  arm_elementwise_mul_s16_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    128  arm_elementwise_mul_s8.c   0x00000000   Lc  Abs  File  De 
+    129  arm_concatenation_s8_w.c   0x00000000   Lc  Abs  File  De 
+    130  arm_concatenation_s8_x.c   0x00000000   Lc  Abs  File  De 
+    131  arm_concatenation_s8_y.c   0x00000000   Lc  Abs  File  De 
+    132  arm_concatenation_s8_z.c   0x00000000   Lc  Abs  File  De 
+    133  arm_convolve_1_x_n_s8.c    0x00000000   Lc  Abs  File  De 
+    134  arm_convolve_1x1_s8.c      0x00000000   Lc  Abs  File  De 
+    135  arm_convolve_1x1_s8_fast.c 0x00000000   Lc  Abs  File  De 
+    136  arm_convolve_fast_s16.c    0x00000000   Lc  Abs  File  De 
+    137  arm_convolve_get_buffer_sizes_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    138  arm_convolve_get_buffer_sizes_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    139  arm_convolve_s16.c         0x00000000   Lc  Abs  File  De 
+    140  arm_convolve_s8.c          0x00000000   Lc  Abs  File  De 
+    141  arm_convolve_wrapper_s16.c 0x00000000   Lc  Abs  File  De 
+    142  arm_convolve_wrapper_s8.c  0x00000000   Lc  Abs  File  De 
+    143  arm_depthwise_conv_3x3_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    144  arm_depthwise_conv_fast_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    145  arm_depthwise_conv_get_buffer_sizes_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    146  arm_depthwise_conv_get_buffer_sizes_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    147  arm_depthwise_conv_s16.c   0x00000000   Lc  Abs  File  De 
+    148  arm_depthwise_conv_s8.c    0x00000000   Lc  Abs  File  De 
+    149  arm_depthwise_conv_s8_opt.c
+                                    0x00000000   Lc  Abs  File  De 
+    150  arm_depthwise_conv_wrapper_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    151  arm_depthwise_conv_wrapper_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    152  arm_nn_depthwise_conv_s8_core.c
+                                    0x00000000   Lc  Abs  File  De 
+    153  arm_nn_mat_mult_kernel_s8_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    154  arm_nn_mat_mult_s8.c       0x00000000   Lc  Abs  File  De 
+    155  arm_fully_connected_get_buffer_sizes_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    156  arm_fully_connected_get_buffer_sizes_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    157  arm_fully_connected_s16.c  0x00000000   Lc  Abs  File  De 
+    158  arm_fully_connected_s8.c   0x00000000   Lc  Abs  File  De 
+    159  arm_lstm_unidirectional_s8_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    160  arm_nn_depthwise_conv_nt_t_padded_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    161  arm_nn_depthwise_conv_nt_t_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    162  arm_nn_depthwise_conv_nt_t_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    163  arm_nn_lstm_calculate_gate_s8_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    164  arm_nn_lstm_step_s8_s16.c  0x00000000   Lc  Abs  File  De 
+    165  arm_nn_lstm_update_cell_state_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    166  arm_nn_lstm_update_output_s8_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    167  arm_nn_mat_mul_core_1x_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    168  arm_nn_mat_mul_core_4x_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    169  arm_nn_mat_mul_kernel_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    170  arm_nn_mat_mult_nt_t_s8.c  0x00000000   Lc  Abs  File  De 
+    171  arm_nn_vec_mat_mul_result_acc_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    172  arm_nn_vec_mat_mult_t_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    173  arm_nn_vec_mat_mult_t_s8.c 0x00000000   Lc  Abs  File  De 
+    174  arm_nn_vec_mat_mult_t_svdf_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    175  arm_nntables.c             0x00000000   Lc  Abs  File  De 
+    176  arm_q7_to_q15_with_offset.c
+                                    0x00000000   Lc  Abs  File  De 
+    177  arm_avgpool_get_buffer_sizes_s16.c
+                                    0x00000000   Lc  Abs  File  De 
+    178  arm_avgpool_get_buffer_sizes_s8.c
+                                    0x00000000   Lc  Abs  File  De 
+    179  arm_avgpool_s16.c          0x00000000   Lc  Abs  File  De 
+    180  arm_avgpool_s8.c           0x00000000   Lc  Abs  File  De 
+    181  arm_max_pool_s16.c         0x00000000   Lc  Abs  File  De 
+    182  arm_max_pool_s8.c          0x00000000   Lc  Abs  File  De 
+    183  arm_reshape_s8.c           0x00000000   Lc  Abs  File  De 
+    184  arm_svdf_s8.c              0x00000000   Lc  Abs  File  De 
+    185  arm_svdf_state_s16_s8.c    0x00000000   Lc  Abs  File  De 
+    186  arm_nn_softmax_common_s8.c 0x00000000   Lc  Abs  File  De 
+    187  arm_softmax_s16.c          0x00000000   Lc  Abs  File  De 
+    188  arm_softmax_s8.c           0x00000000   Lc  Abs  File  De 
+    189  arm_softmax_s8_s16.c       0x00000000   Lc  Abs  File  De 
+    190  arm_softmax_u8.c           0x00000000   Lc  Abs  File  De 
+    191  device_definition.c        0x00000000   Lc  Abs  File  De 
+    192  syscounter_armv8-m_cntrl_drv.c
+                                    0x00000000   Lc  Abs  File  De 
+    193  syscounter_armv8-m_read_drv.c
+                                    0x00000000   Lc  Abs  File  De 
+    194  systimer_armv8-m_drv.c     0x00000000   Lc  Abs  File  De 
+    195  systimer_armv8-m_timeout.c 0x00000000   Lc  Abs  File  De 
+    196  buffer.c                   0x00000000   Lc  Abs  File  De 
+    197  fftwrap.c                  0x00000000   Lc  Abs  File  De 
+    198  filterbank.c               0x00000000   Lc  Abs  File  De 
+    199  jitter.c                   0x00000000   Lc  Abs  File  De 
+    200  kiss_fft.c                 0x00000000   Lc  Abs  File  De 
+    201  kiss_fftr.c                0x00000000   Lc  Abs  File  De 
+    202  mdf.c                      0x00000000   Lc  Abs  File  De 
+    203  preprocess.c               0x00000000   Lc  Abs  File  De 
+    204  resample.c                 0x00000000   Lc  Abs  File  De 
+    205  scal.c                     0x00000000   Lc  Abs  File  De 
+    206  smallft.c                  0x00000000   Lc  Abs  File  De 
+    207  startup_fvp_sse300_mps3.c  0x00000000   Lc  Abs  File  De 
+    208  __tagsym$$used.0           0x10000000   Lc    1   --   De 
+    209  system_SSE300MPS3.c        0x00000000   Lc  Abs  File  De 
+    210  .L_MergedGlobals           0x300280a4   Lc    5  Data  De   0x8
+    211  platform_init.c            0x00000000   Lc  Abs  File  De 
+    212  th_api.c                   0x00000000   Lc  Abs  File  De 
+    213  arm_s8_to_s16_unordered_with_offset.c
+                                    0x00000000   Lc  Abs  File  De 
+    214  ee_abf_f32.c               0x00000000   Lc  Abs  File  De 
+    215  __arm_cp.0_67              0x10003578   Lc    1   --   De   0x4
+    216  __arm_cp.0_68              0x1000357c   Lc    1   --   De   0x4
+    217  __arm_cp.0_69              0x10003580   Lc    1   --   De   0x4
+    218  ee_abf_f32_tables.c        0x00000000   Lc  Abs  File  De 
+    219  ee_aec_f32.c               0x00000000   Lc  Abs  File  De 
+    220  ee_anr_f32.c               0x00000000   Lc  Abs  File  De 
+    221  ee_kws.c                   0x00000000   Lc  Abs  File  De 
+    222  ee_mfcc_f32.c              0x00000000   Lc  Abs  File  De 
+    223  ee_mfcc_f32_tables.c       0x00000000   Lc  Abs  File  De 
+    224  ee_nn_tables.c             0x00000000   Lc  Abs  File  De 
+    225  abf_f32_expected.c         0x00000000   Lc  Abs  File  De 
+    226  abf_f32_input_ch1.c        0x00000000   Lc  Abs  File  De 
+    227  abf_f32_input_ch2.c        0x00000000   Lc  Abs  File  De 
+    228  test_abf_f32.c             0x00000000   Lc  Abs  File  De 
+    229  p_left                     0x3002acc4   Lc    6  Data  De   0x200
+    230  xdais                      0x3002b2e0   Lc    6  Data  De   0x30
+    231  p_right                    0x3002b0c4   Lc    6  Data  De   0x200
+    232  p_output                   0x3002aec4   Lc    6  Data  De   0x200
+    233  .L.str.6                   0x3000fe34   Lc    4  Data  De   0x29
+    234  .Lstr.11                   0x3000fe5d   Lc    4  Data  De   0x10
+    235  .Lstr.10                   0x3000fe6d   Lc    4  Data  De   0x10
+    236  perf_counter.c             0x00000000   Lc  Abs  File  De 
+    237  __arm_cp.0_0               0x10004e70   Lc    1   --   De   0x4
+    238  __arm_cp.0_1               0x10004e74   Lc    1   --   De   0x4
+    239  __arm_cp.0_2               0x10004e78   Lc    1   --   De   0x4
+    240  __arm_cp.0_3               0x10004e7c   Lc    1   --   De   0x4
+    241  __arm_cp.0_4               0x10004e80   Lc    1   --   De   0x4
+    242  __arm_cp.0_5               0x10004e84   Lc    1   --   De   0x4
+    243  __arm_cp.0_6               0x10004e88   Lc    1   --   De   0x4
+    244  __arm_cp.0_7               0x10004e8c   Lc    1   --   De   0x4
+    245  __arm_cp.2_0               0x10004dfc   Lc    1   --   De   0x4
+    246  __arm_cp.2_1               0x10004e00   Lc    1   --   De   0x4
+    247  __arm_cp.2_4               0x10004e04   Lc    1   --   De   0x4
+    248  __arm_cp.2_5               0x10004e08   Lc    1   --   De   0x4
+    249  __arm_cp.3_0               0x10004878   Lc    1   --   De   0x4
+    250  __arm_cp.4_0               0x100048c0   Lc    1   --   De   0x4
+    251  __arm_cp.4_1               0x100048c4   Lc    1   --   De   0x4
+    252  __arm_cp.4_2               0x100048c8   Lc    1   --   De   0x4
+    253  __arm_cp.4_3               0x100048cc   Lc    1   --   De   0x4
+    254  __arm_cp.4_4               0x100048d0   Lc    1   --   De   0x4
+    255  __arm_cp.4_5               0x100048d4   Lc    1   --   De   0x4
+    256  __arm_cp.5_0               0x10001c74   Lc    1   --   De   0x4
+    257  __arm_cp.5_1               0x10001c78   Lc    1   --   De   0x4
+    258  __arm_cp.5_2               0x10001c7c   Lc    1   --   De   0x4
+    259  __arm_cp.5_3               0x10001c80   Lc    1   --   De   0x4
+    260  s_lSystemClockCounts       0x3002b2c8   Lc    6  Data  De   0x8
+    261  s_nMSResidule              0x3002b2d0   Lc    6  Data  De   0x4
+    262  s_nMSUnit                  0x3002ab4c   Lc    5  Data  De   0x4
+    263  s_nSystemMS                0x3002b2d4   Lc    6  Data  De   0x4
+    264  s_nUSResidule              0x3002b2dc   Lc    6  Data  De   0x4
+    265  s_nUSUnit                  0x3002ab50   Lc    5  Data  De   0x4
+    266  s_nSystemUS                0x3002b2d8   Lc    6  Data  De   0x4
+    267  ../systick_wrapper_ual.s   0x00000000   Lc  Abs  File  De 
+    268  .text                      0x10000934   Lc    1  Sect  De   0x20
+    269  dc.s                       0x00000000   Lc  Abs  File  De 
+    270  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    271  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    272  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    273  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    274  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    275  .text                      0x10000954   Lc    1  Sect  De 
+    276  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    277  .text                      0x100009b2   Lc    1  Sect  De 
+    278  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    279  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    280  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    281  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    282  ../clib/heap2.c            0x00000000   Lc  Abs  File  De 
+    283  ../clib/heap2.c            0x00000000   Lc  Abs  File  De 
+    284  ../clib/longlong.s         0x00000000   Lc  Abs  File  De 
+    285  ../clib/longlong.s         0x00000000   Lc  Abs  File  De 
+    286  ../clib/longlong.s         0x00000000   Lc  Abs  File  De 
+    287  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    288  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    289  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    290  .text                      0x10000a00   Lc    1  Sect  De 
+    291  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    292  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    293  .text                      0x10000a18   Lc    1  Sect  De 
+    294  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    295  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    296  .text                      0x10000a80   Lc    1  Sect  De 
+    297  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    298  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    299  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    300  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    301  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    302  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    303  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    304  ../clib/printf_percent.s   0x00000000   Lc  Abs  File  De 
+    305  ../clib/printf_percent.s   0x00000000   Lc  Abs  File  De 
+    306  .ARM.Collect$$_printf_percent$$00000009
+                                    0x100008c4   Lc    1  Sect  De   0x6
+    307  ../clib/printf_percent.s   0x00000000   Lc  Abs  File  De 
+    308  .ARM.Collect$$_printf_percent$$00000000
+                                    0x100008c4   Lc    1  Sect  De 
+    309  ../clib/scanf.c            0x00000000   Lc  Abs  File  De 
+    310  .text                      0x10000af8   Lc    1  Sect  De 
+    311  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    312  .text                      0x10000b14   Lc    1  Sect  De 
+    313  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    314  .bss                       0x3002ab58   Lc    6  Sect  De   0x54
+    315  .bss                       0x3002abac   Lc    6  Sect  De   0x54
+    316  .bss                       0x3002ac00   Lc    6  Sect  De   0x54
+    317  .data                      0x30028098   Lc    5  Sect  De   0x4
+    318  .data                      0x3002809c   Lc    5  Sect  De   0x4
+    319  .data                      0x300280a0   Lc    5  Sect  De   0x4
+    320  ../clib/stdlib.c           0x00000000   Lc  Abs  File  De 
+    321  ../clib/stdlib.c           0x00000000   Lc  Abs  File  De 
+    322  ../clib/stdlib.c           0x00000000   Lc  Abs  File  De 
+    323  .text                      0x10000b40   Lc    1  Sect  De 
+    324  ../clib/memcpset.s         0x00000000   Lc  Abs  File  De 
+    325  .text                      0x10000b52   Lc    1  Sect  De   0x8a
+    326  ../clib/memcpset.s         0x00000000   Lc  Abs  File  De 
+    327  ../clib/memcpset.s         0x00000000   Lc  Abs  File  De 
+    328  .text                      0x10000bdc   Lc    1  Sect  De   0x64
+    329  ../clib/memcpset.s         0x00000000   Lc  Abs  File  De 
+    330  ../clib/memcpset.s         0x00000000   Lc  Abs  File  De 
+    331  ../clib/memcpset.s         0x00000000   Lc  Abs  File  De 
+    332  ../clib/memcpset.s         0x00000000   Lc  Abs  File  De 
+    333  .text                      0x10000c40   Lc    1  Sect  De   0x4e
+    334  ../clib/division.s         0x00000000   Lc  Abs  File  De 
+    335  ../clib/division.s         0x00000000   Lc  Abs  File  De 
+    336  ../clib/division.s         0x00000000   Lc  Abs  File  De 
+    337  ../clib/division.s         0x00000000   Lc  Abs  File  De 
+    338  ../clib/angel/startup.s    0x00000000   Lc  Abs  File  De 
+    339  !!!main                    0x100007c0   Lc    1  Sect  De   0x8
+    340  ../clib/arm_runtime.c      0x00000000   Lc  Abs  File  De 
+    341  .init_array                0x30028098   Lc    4  Sect  De 
+    342  ../clib/arm_runtime.c      0x00000000   Lc  Abs  File  De 
+    343  .text                      0x10000c90   Lc    1  Sect  De 
+    344  ../mathlib/atan.c          0x00000000   Lc  Abs  File  De 
+    345  ../mathlib/cos.c           0x00000000   Lc  Abs  File  De 
+    346  ../mathlib/exp.c           0x00000000   Lc  Abs  File  De 
+    347  ../mathlib/expf.c          0x00000000   Lc  Abs  File  De 
+    348  ../mathlib/log.c           0x00000000   Lc  Abs  File  De 
+    349  ../mathlib/logf.c          0x00000000   Lc  Abs  File  De 
+    350  ../mathlib/pow.c           0x00000000   Lc  Abs  File  De 
+    351  ../mathlib/powf.c          0x00000000   Lc  Abs  File  De 
+    352  ../mathlib/powi.c          0x00000000   Lc  Abs  File  De 
+    353  ../mathlib/sin.c           0x00000000   Lc  Abs  File  De 
+    354  ../clib/angel/sys.s        0x00000000   Lc  Abs  File  De 
+    355  ../clib/angel/kernel.s     0x00000000   Lc  Abs  File  De 
+    356  .ARM.Collect$$rtentry$$00000000
+                                    0x10000910   Lc    1  Sect  De 
+    357  ../clib/angel/kernel.s     0x00000000   Lc  Abs  File  De 
+    358  .ARM.Collect$$rtexit$$00000000
+                                    0x10000924   Lc    1  Sect  De   0x2
+    359  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    360  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    361  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    362  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    363  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    364  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    365  .text                      0x10000cbc   Lc    1  Sect  De   0x8
+    366  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    367  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    368  .text                      0x10000cc4   Lc    1  Sect  De   0x8
+    369  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    370  .text                      0x10000ccc   Lc    1  Sect  De 
+    371  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    372  .text                      0x10000cd0   Lc    1  Sect  De 
+    373  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    374  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    375  .text                      0x10000d5a   Lc    1  Sect  De 
+    376  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    377  ../clib/heap2.c            0x00000000   Lc  Abs  File  De 
+    378  ../clib/fenv.c             0x00000000   Lc  Abs  File  De 
+    379  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    380  .text                      0x10000d66   Lc    1  Sect  De 
+    381  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    382  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    383  .text                      0x10000e18   Lc    1  Sect  De 
+    384  ../clib/printf_percent.s   0x00000000   Lc  Abs  File  De 
+    385  .ARM.Collect$$_printf_percent$$00000017
+                                    0x100008ca   Lc    1  Sect  De   0x4
+    386  ../clib/scanf.c            0x00000000   Lc  Abs  File  De 
+    387  .text                      0x10000e3c   Lc    1  Sect  De 
+    388  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    389  i.fputc                    0x10004e90   Lc    1  Sect  De 
+    390  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    391  .text                      0x10000eac   Lc    1  Sect  De 
+    392  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    393  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    394  ../clib/armsys.c           0x00000000   Lc  Abs  File  De 
+    395  .text                      0x10000fe4   Lc    1  Sect  De 
+    396  ../clib/libinit.s          0x00000000   Lc  Abs  File  De 
+    397  .ARM.Collect$$libinit$$00000001
+                                    0x100008d0   Lc    1  Sect  De   0x4
+    398  .ARM.Collect$$libinit$$00000004
+                                    0x100008d4   Lc    1  Sect  De 
+    399  .ARM.Collect$$libinit$$00000006
+                                    0x100008d4   Lc    1  Sect  De 
+    400  .ARM.Collect$$libinit$$0000000C
+                                    0x100008dc   Lc    1  Sect  De 
+    401  .ARM.Collect$$libinit$$0000000E
+                                    0x100008dc   Lc    1  Sect  De 
+    402  .ARM.Collect$$libinit$$00000010
+                                    0x100008dc   Lc    1  Sect  De 
+    403  .ARM.Collect$$libinit$$00000011
+                                    0x100008dc   Lc    1  Sect  De   0x6
+    404  .ARM.Collect$$libinit$$00000013
+                                    0x100008e2   Lc    1  Sect  De 
+    405  .ARM.Collect$$libinit$$00000014
+                                    0x100008e2   Lc    1  Sect  De   0xc
+    406  .ARM.Collect$$libinit$$00000015
+                                    0x100008ee   Lc    1  Sect  De 
+    407  .ARM.Collect$$libinit$$00000017
+                                    0x100008ee   Lc    1  Sect  De 
+    408  .ARM.Collect$$libinit$$00000019
+                                    0x100008ee   Lc    1  Sect  De 
+    409  .ARM.Collect$$libinit$$0000001B
+                                    0x100008ee   Lc    1  Sect  De 
+    410  .ARM.Collect$$libinit$$0000001D
+                                    0x100008ee   Lc    1  Sect  De 
+    411  .ARM.Collect$$libinit$$0000001F
+                                    0x100008ee   Lc    1  Sect  De 
+    412  .ARM.Collect$$libinit$$00000021
+                                    0x100008ee   Lc    1  Sect  De 
+    413  .ARM.Collect$$libinit$$00000023
+                                    0x100008ee   Lc    1  Sect  De 
+    414  .ARM.Collect$$libinit$$00000025
+                                    0x100008ee   Lc    1  Sect  De 
+    415  .ARM.Collect$$libinit$$00000026
+                                    0x100008ee   Lc    1  Sect  De   0x4
+    416  .ARM.Collect$$libinit$$00000027
+                                    0x100008f2   Lc    1  Sect  De 
+    417  .ARM.Collect$$libinit$$00000028
+                                    0x100008f2   Lc    1  Sect  De   0x8
+    418  .ARM.Collect$$libinit$$00000030
+                                    0x100008fa   Lc    1  Sect  De 
+    419  .ARM.Collect$$libinit$$00000032
+                                    0x100008fa   Lc    1  Sect  De 
+    420  .ARM.Collect$$libinit$$00000033
+                                    0x100008fa   Lc    1  Sect  De   0x4
+    421  .ARM.Collect$$libinit$$00000034
+                                    0x100008fe   Lc    1  Sect  De 
+    422  .ARM.Collect$$libinit$$00000035
+                                    0x100008fe   Lc    1  Sect  De   0x2
+    423  ../clib/r_arm_target.c     0x00000000   Lc  Abs  File  De 
+    424  ../clib/r_arm_target.c     0x00000000   Lc  Abs  File  De 
+    425  ../fplib/istatus.s         0x00000000   Lc  Abs  File  De 
+    426  ../fplib/scalbn.s          0x00000000   Lc  Abs  File  De 
+    427  ../fplib/usenofp.s         0x00000000   Lc  Abs  File  De 
+    428  ../mathlib/cos_i.c         0x00000000   Lc  Abs  File  De 
+    429  ../mathlib/dunder.c        0x00000000   Lc  Abs  File  De 
+    430  ../mathlib/fabs.c          0x00000000   Lc  Abs  File  De 
+    431  ../mathlib/fpclassify.c    0x00000000   Lc  Abs  File  De 
+    432  ../mathlib/fpclassifyf.c   0x00000000   Lc  Abs  File  De 
+    433  ../mathlib/funder.c        0x00000000   Lc  Abs  File  De 
+    434  ../mathlib/poly.c          0x00000000   Lc  Abs  File  De 
+    435  ../mathlib/qnan.c          0x00000000   Lc  Abs  File  De 
+    436  ../mathlib/rred.c          0x00000000   Lc  Abs  File  De 
+    437  ../mathlib/sin_i.c         0x00000000   Lc  Abs  File  De 
+    438  ../mathlib/sqrt.c          0x00000000   Lc  Abs  File  De 
+    439  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    440  .text                      0x100010ec   Lc    1  Sect  De 
+    441  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    442  .constdata                 0x30000000   Lc    4  Sect  De   0x4
+    443  .constdata                 0x30000004   Lc    4  Sect  De   0x4
+    444  .constdata                 0x30000008   Lc    4  Sect  De   0x4
+    445  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    446  ../clib/angel/sys.s        0x00000000   Lc  Abs  File  De 
+    447  .bss                       0x3002ac54   Lc    6  Sect  De   0x60
+    448  ../clib/angel/kernel.s     0x00000000   Lc  Abs  File  De 
+    449  .ARM.Collect$$rtentry$$00000002
+                                    0x10000910   Lc    1  Sect  De 
+    450  .ARM.Collect$$rtentry$$00000009
+                                    0x10000914   Lc    1  Sect  De 
+    451  .ARM.Collect$$rtentry$$0000000A
+                                    0x10000914   Lc    1  Sect  De   0x4
+    452  .ARM.Collect$$rtentry$$0000000C
+                                    0x10000918   Lc    1  Sect  De 
+    453  .ARM.Collect$$rtentry$$0000000D
+                                    0x10000918   Lc    1  Sect  De   0x8
+    454  ../clib/angel/kernel.s     0x00000000   Lc  Abs  File  De 
+    455  ../clib/angel/kernel.s     0x00000000   Lc  Abs  File  De 
+    456  .ARM.Collect$$rtentry$$00000007
+                                    0x10000910   Lc    1  Sect  De   0x4
+    457  .ARM.Collect$$rtentry$$00002718
+                                    0x10000920   Lc    1  Sect  De   0x4
+    458  __lit__00000000            0x10000920   Lc    1  Data  De   0x4
+    459  ../clib/angel/kernel.s     0x00000000   Lc  Abs  File  De 
+    460  .ARM.Collect$$rtexit$$00000002
+                                    0x10000926   Lc    1  Sect  De 
+    461  .ARM.Collect$$rtexit$$00000003
+                                    0x10000926   Lc    1  Sect  De   0x4
+    462  .ARM.Collect$$rtexit$$00000004
+                                    0x1000092a   Lc    1  Sect  De   0x6
+    463  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    464  .text                      0x10001104   Lc    1  Sect  De   0x10
+    465  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    466  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    467  .text                      0x10001114   Lc    1  Sect  De 
+    468  ../clib/maybe.s            0x00000000   Lc  Abs  File  De 
+    469  .text                      0x10001118   Lc    1  Sect  De 
+    470  ../clib/maybe.s            0x00000000   Lc  Abs  File  De 
+    471  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    472  .text                      0x10001118   Lc    1  Sect  De 
+    473  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    474  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    475  .text                      0x1000114c   Lc    1  Sect  De 
+    476  _printf_input_char         0x1000114d   Lc    1  Code  De   0xa
+    477  ../clib/scanf.c            0x00000000   Lc  Abs  File  De 
+    478  .text                      0x1000117c   Lc    1  Sect  De 
+    479  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    480  .text                      0x1000121a   Lc    1  Sect  De 
+    481  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    482  .text                      0x10001222   Lc    1  Sect  De 
+    483  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    484  .text                      0x10001404   Lc    1  Sect  De 
+    485  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    486  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    487  .text                      0x1000144c   Lc    1  Sect  De 
+    488  _freopen_locked            0x1000144d   Lc    1  Code  De 
+    489  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    490  .text                      0x1000153c   Lc    1  Sect  De 
+    491  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    492  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    493  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    494  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    495  .text                      0x10001588   Lc    1  Sect  De 
+    496  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    497  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    498  .text                      0x10001596   Lc    1  Sect  De 
+    499  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    500  ../clib/heapaux.c          0x00000000   Lc  Abs  File  De 
+    501  ../clib/heapaux.c          0x00000000   Lc  Abs  File  De 
+    502  ../clib/armsys.c           0x00000000   Lc  Abs  File  De 
+    503  .emb_text                  0x10000930   Lc    1  Sect  De   0x4
+    504  ../clib/armsys.c           0x00000000   Lc  Abs  File  De 
+    505  ../clib/libinit.s          0x00000000   Lc  Abs  File  De 
+    506  .ARM.Collect$$libshutdown$$00000002
+                                    0x1000090a   Lc    1  Sect  De 
+    507  .ARM.Collect$$libshutdown$$00000003
+                                    0x1000090a   Lc    1  Sect  De   0x4
+    508  .ARM.Collect$$libshutdown$$00000004
+                                    0x1000090e   Lc    1  Sect  De 
+    509  .ARM.Collect$$libshutdown$$00000007
+                                    0x1000090e   Lc    1  Sect  De 
+    510  .ARM.Collect$$libshutdown$$0000000A
+                                    0x1000090e   Lc    1  Sect  De 
+    511  .ARM.Collect$$libshutdown$$0000000C
+                                    0x1000090e   Lc    1  Sect  De 
+    512  .ARM.Collect$$libshutdown$$0000000F
+                                    0x1000090e   Lc    1  Sect  De 
+    513  .ARM.Collect$$libshutdown$$00000010
+                                    0x1000090e   Lc    1  Sect  De   0x2
+    514  ../clib/wchar.c            0x00000000   Lc  Abs  File  De 
+    515  ../fplib/dcheck1.s         0x00000000   Lc  Abs  File  De 
+    516  ../fplib/fpinit.s          0x00000000   Lc  Abs  File  De 
+    517  x$fpl$fpinit               0x10004ed8   Lc    1  Sect  De   0x1e
+    518  $v0                        0x10004ed8   Lc    1   --   De 
+    519  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    520  .text                      0x100015a4   Lc    1  Sect  De 
+    521  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    522  .text                      0x1000160c   Lc    1  Sect  De 
+    523  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    524  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    525  ../clib/angel/sys.s        0x00000000   Lc  Abs  File  De 
+    526  .text                      0x10001618   Lc    1  Sect  De   0x2
+    527  ../clib/angel/sys.s        0x00000000   Lc  Abs  File  De 
+    528  .text                      0x1000161a   Lc    1  Sect  De 
+    529  ../clib/angel/sys.s        0x00000000   Lc  Abs  File  De 
+    530  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    531  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    532  ../clib/angel/rt.s         0x00000000   Lc  Abs  File  De 
+    533  .text                      0x1000161c   Lc    1  Sect  De   0x8
+    534  ../clib/heapalloc.c        0x00000000   Lc  Abs  File  De 
+    535  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    536  ../clib/printf.c           0x00000000   Lc  Abs  File  De 
+    537  ../clib/scanf.c            0x00000000   Lc  Abs  File  De 
+    538  .text                      0x10001624   Lc    1  Sect  De 
+    539  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    540  .text                      0x10001640   Lc    1  Sect  De 
+    541  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    542  .text                      0x10001738   Lc    1  Sect  De 
+    543  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    544  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    545  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    546  ../clib/locale.s           0x00000000   Lc  Abs  File  De 
+    547  locale$$data               0x30027f80   Lc    4  Sect  De   0x110
+    548  __lcctype_c_name           0x30027f84   Lc    4  Data  De   0x2
+    549  __lcctype_c_start          0x30027f8c   Lc    4  Data  De 
+    550  __lcctype_c_end            0x30028090   Lc    4  Data  De 
+    551  locale$$code               0x10004eac   Lc    1  Sect  De   0x2c
+    552  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    553  .text                      0x10001840   Lc    1  Sect  De 
+    554  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    555  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    556  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    557  .text                      0x1000184c   Lc    1  Sect  De 
+    558  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    559  .text                      0x10001880   Lc    1  Sect  De 
+    560  ../clib/assert.c           0x00000000   Lc  Abs  File  De 
+    561  ../clib/angel/boardlib.s   0x00000000   Lc  Abs  File  De 
+    562  ../clib/angel/boardlib.s   0x00000000   Lc  Abs  File  De 
+    563  ../clib/angel/boardlib.s   0x00000000   Lc  Abs  File  De 
+    564  ../clib/angel/boardlib.s   0x00000000   Lc  Abs  File  De 
+    565  ../clib/armsys.c           0x00000000   Lc  Abs  File  De 
+    566  ../clib/armsys.c           0x00000000   Lc  Abs  File  De 
+    567  ../clib/libinit.s          0x00000000   Lc  Abs  File  De 
+    568  .ARM.Collect$$libinit$$00000000
+                                    0x100008ce   Lc    1  Sect  De   0x2
+    569  ../clib/libinit.s          0x00000000   Lc  Abs  File  De 
+    570  .ARM.Collect$$libshutdown$$00000000
+                                    0x10000908   Lc    1  Sect  De   0x2
+    571  ../fplib/retnan.s          0x00000000   Lc  Abs  File  De 
+    572  ../clib/angel/sys.s        0x00000000   Lc  Abs  File  De 
+    573  ../clib/angel/sys.s        0x00000000   Lc  Abs  File  De 
+    574  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    575  ../clib/heap1.c            0x00000000   Lc  Abs  File  De 
+    576  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    577  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    578  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    579  .text                      0x100018d0   Lc    1  Sect  De 
+    580  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    581  ../clib/stdio.c            0x00000000   Lc  Abs  File  De 
+    582  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    583  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    584  .text                      0x10001912   Lc    1  Sect  De 
+    585  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    586  ../clib/string.c           0x00000000   Lc  Abs  File  De 
+    587  .text                      0x10001944   Lc    1  Sect  De 
+    588  ../clib/memcpset.s         0x00000000   Lc  Abs  File  De 
+    589  .text                      0x10001988   Lc    1  Sect  De   0x7c
+    590  ../clib/libinit.s          0x00000000   Lc  Abs  File  De 
+    591  .ARM.Collect$$libinit$$0000000A
+                                    0x100008d4   Lc    1  Sect  De   0x8
+    592  .ARM.Collect$$libinit$$0000271B
+                                    0x10000900   Lc    1  Sect  De   0x8
+    593  __lit__00000000            0x10000900   Lc    1  Data  De   0x4
+    594  __lit__00000001            0x10000904   Lc    1  Data  De   0x4
+    595  ../fplib/trapv.s           0x00000000   Lc  Abs  File  De 
+    596  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    597  .text                      0x10001a04   Lc    1  Sect  De 
+    598  ../clib/angel/sysapp.c     0x00000000   Lc  Abs  File  De 
+    599  ../clib/signal.s           0x00000000   Lc  Abs  File  De 
+    600  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    601  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    602  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    603  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    604  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    605  ../clib/signal.c           0x00000000   Lc  Abs  File  De 
+    606  ../clib/angel/dclz77c.s    0x00000000   Lc  Abs  File  De 
+    607  !!dclz77c                  0x10000824   Lc    1  Sect  De   0x64
+    608  ../clib/angel/scatter.s    0x00000000   Lc  Abs  File  De 
+    609  !!!scatter                 0x100007c8   Lc    1  Sect  De   0x5c
+    610  !!handler_null             0x100008a4   Lc    1  Sect  De   0x2
+    611  ../clib/angel/handlers.s   0x00000000   Lc  Abs  File  De 
+    612  !!handler_copy             0x10000888   Lc    1  Sect  De   0x1a
+    613  ../clib/angel/handlers.s   0x00000000   Lc  Abs  File  De 
+    614  !!handler_zi               0x100008a8   Lc    1  Sect  De   0x1c
+    615  BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$v8.1M$VFPv5_D16$PE$MVEf$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$IEEEX$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2
+                                    0x00000000   Gb  Abs   --   Hi 
+    616  __Vectors                  0x10000000   Gb    1  Data  Hi   0x7c0
+    617  __main                     0x100007c1   Gb    1  Code  Hi   0x8
+    618  __scatterload              0x100007c9   Gb    1  Code  Hi 
+    619  __scatterload_rt2          0x100007c9   Gb    1  Code  Hi   0x54
+    620  __scatterload_rt2_thumb_only
+                                    0x100007c9   Gb    1  Code  Hi 
+    621  __scatterload_loop         0x100007d3   Gb    1  Code  Hi 
+    622  __decompress               0x10000825   Gb    1  Code  Hi   0x64
+    623  __decompress2              0x10000825   Gb    1  Code  Hi 
+    624  __scatterload_copy         0x10000889   Gb    1  Code  Hi   0x1a
+    625  __scatterload_null         0x100008a5   Gb    1  Code  Hi   0x2
+    626  __scatterload_zeroinit     0x100008a9   Gb    1  Code  Hi   0x1c
+    627  _printf_d                  0x100008c5   Gb    1  Code  Hi 
+    628  _printf_percent            0x100008c5   Gb    1  Code  Hi 
+    629  _printf_percent_end        0x100008cb   Gb    1  Code  De 
+    630  __rt_lib_init              0x100008cf   Gb    1  Code  De 
+    631  __rt_lib_init_fp_1         0x100008d1   Gb    1  Code  Hi 
+    632  __rt_lib_init_heap_2       0x100008d5   Gb    1  Code  Hi 
+    633  __rt_lib_init_preinit_1    0x100008d5   Gb    1  Code  Hi 
+    634  __rt_lib_init_relocate_pie_1
+                                    0x100008d5   Gb    1  Code  Hi 
+    635  __rt_lib_init_heap_1       0x100008dd   Gb    1  Code  Hi 
+    636  __rt_lib_init_lc_common    0x100008dd   Gb    1  Code  Hi 
+    637  __rt_lib_init_rand_1       0x100008dd   Gb    1  Code  Hi 
+    638  __rt_lib_init_user_alloc_1 0x100008dd   Gb    1  Code  Hi 
+    639  __rt_lib_init_lc_collate_1 0x100008e3   Gb    1  Code  Hi 
+    640  __rt_lib_init_lc_ctype_2   0x100008e3   Gb    1  Code  Hi 
+    641  __rt_lib_init_atexit_1     0x100008ef   Gb    1  Code  Hi 
+    642  __rt_lib_init_clock_1      0x100008ef   Gb    1  Code  Hi 
+    643  __rt_lib_init_fp_trap_1    0x100008ef   Gb    1  Code  Hi 
+    644  __rt_lib_init_getenv_1     0x100008ef   Gb    1  Code  Hi 
+    645  __rt_lib_init_lc_ctype_1   0x100008ef   Gb    1  Code  Hi 
+    646  __rt_lib_init_lc_monetary_1
+                                    0x100008ef   Gb    1  Code  Hi 
+    647  __rt_lib_init_lc_numeric_1 0x100008ef   Gb    1  Code  Hi 
+    648  __rt_lib_init_lc_time_1    0x100008ef   Gb    1  Code  Hi 
+    649  __rt_lib_init_signal_1     0x100008ef   Gb    1  Code  Hi 
+    650  __rt_lib_init_stdio_2      0x100008ef   Gb    1  Code  Hi 
+    651  __rt_lib_init_argv_1       0x100008f3   Gb    1  Code  Hi 
+    652  __rt_lib_init_stdio_1      0x100008f3   Gb    1  Code  Hi 
+    653  __rt_lib_init_alloca_1     0x100008fb   Gb    1  Code  Hi 
+    654  __rt_lib_init_cpp_2        0x100008fb   Gb    1  Code  Hi 
+    655  __rt_lib_init_exceptions_1 0x100008fb   Gb    1  Code  Hi 
+    656  __rt_lib_init_cpp_1        0x100008ff   Gb    1  Code  Hi 
+    657  __rt_lib_init_return       0x100008ff   Gb    1  Code  Hi 
+    658  __rt_lib_shutdown          0x10000909   Gb    1  Code  De 
+    659  __rt_lib_shutdown_cpp_1    0x1000090b   Gb    1  Code  Hi 
+    660  __rt_lib_shutdown_stdio_2  0x1000090b   Gb    1  Code  Hi 
+    661  __rt_lib_shutdown_fp_trap_1
+                                    0x1000090f   Gb    1  Code  Hi 
+    662  __rt_lib_shutdown_heap_1   0x1000090f   Gb    1  Code  Hi 
+    663  __rt_lib_shutdown_return   0x1000090f   Gb    1  Code  Hi 
+    664  __rt_lib_shutdown_signal_1 0x1000090f   Gb    1  Code  Hi 
+    665  __rt_lib_shutdown_stdio_1  0x1000090f   Gb    1  Code  Hi 
+    666  __rt_lib_shutdown_user_alloc_1
+                                    0x1000090f   Gb    1  Code  Hi 
+    667  __rt_entry                 0x10000911   Gb    1  Code  Hi 
+    668  __rt_entry_presh_1         0x10000911   Gb    1  Code  Hi 
+    669  __rt_entry_sh              0x10000911   Gb    1  Code  Hi 
+    670  __rt_entry_li              0x10000915   Gb    1  Code  Hi 
+    671  __rt_entry_postsh_1        0x10000915   Gb    1  Code  Hi 
+    672  __rt_entry_main            0x10000919   Gb    1  Code  Hi 
+    673  __rt_entry_postli_1        0x10000919   Gb    1  Code  Hi 
+    674  __rt_exit                  0x10000925   Gb    1  Code  De 
+    675  __rt_exit_ls               0x10000927   Gb    1  Code  Hi 
+    676  __rt_exit_prels_1          0x10000927   Gb    1  Code  Hi 
+    677  __rt_exit_exit             0x1000092b   Gb    1  Code  Hi 
+    678  __ARM_argv_veneer          0x10000931   Gb    1  Code  Hi   0x4
+    679  SysTick_Handler            0x10000935   Gb    1  Code  Hi   0x12
+    680  __ensure_systick_wrapper   0x10000951   Gb    1  Code  Hi   0x4
+    681  malloc                     0x10000955   Gb    1  Code  Hi   0x5e
+    682  free                       0x100009b3   Gb    1  Code  De   0x4e
+    683  __2printf                  0x10000a01   Gb    1  Code  De   0x14
+    684  __printf                   0x10000a19   Gb    1  Code  De   0x68
+    685  _printf_int_dec            0x10000a81   Gb    1  Code  Hi   0x68
+    686  atoi                       0x10000af9   Gb    1  Code  De   0x1a
+    687  puts                       0x10000b15   Gb    1  Code  De   0x28
+    688  exit                       0x10000b41   Gb    1  Code  De   0x12
+    689  __aeabi_memcpy             0x10000b53   Gb    1  Code  De 
+    690  __rt_memcpy                0x10000b53   Gb    1  Code  De   0x8a
+    691  _memcpy_lastbytes          0x10000bb9   Gb    1  Code  De 
+    692  __aeabi_memcpy4            0x10000bdd   Gb    1  Code  De 
+    693  __aeabi_memcpy8            0x10000bdd   Gb    1  Code  De 
+    694  __rt_memcpy_w              0x10000bdd   Gb    1  Code  De   0x64
+    695  _memcpy_lastbytes_aligned  0x10000c25   Gb    1  Code  De 
+    696  __aeabi_memclr4            0x10000c41   Gb    1  Code  De 
+    697  __aeabi_memclr8            0x10000c41   Gb    1  Code  De 
+    698  __rt_memclr_w              0x10000c41   Gb    1  Code  De 
+    699  _memset_w                  0x10000c45   Gb    1  Code  De   0x4a
+    700  __cpp_initialize__aeabi_   0x10000c91   Gb    1  Code  Hi   0x24
+    701  __rt_heap_descriptor       0x10000cbd   Gb    1  Code  De   0x8
+    702  __aeabi_errno_addr         0x10000cc5   Gb    1  Code  De   0x8
+    703  __errno$intlibspace        0x10000cc5   Gb    1  Code  De 
+    704  __rt_errno_addr$intlibspace
+                                    0x10000cc5   Gb    1  Code  De 
+    705  __use_no_heap              0x10000ccd   Gb    1  Code  Hi   0x2
+    706  __heap$guard               0x10000ccf   Gb    1  Code  Hi   0x2
+    707  _terminate_user_alloc      0x10000cd1   Gb    1  Code  De   0x2
+    708  _init_user_alloc           0x10000cd3   Gb    1  Code  De   0x2
+    709  __Heap_Full                0x10000cd5   Gb    1  Code  De   0x22
+    710  __Heap_Broken              0x10000cf7   Gb    1  Code  De   0x6
+    711  _init_alloc                0x10000cfd   Gb    1  Code  Hi   0x5e
+    712  __Heap_Initialize          0x10000d5b   Gb    1  Code  Hi   0x8
+    713  __Heap_DescSize            0x10000d63   Gb    1  Code  De   0x4
+    714  _printf_int_common         0x10000d67   Gb    1  Code  De   0xb2
+    715  _printf_char_file          0x10000e19   Gb    1  Code  De   0x20
+    716  strtol                     0x10000e3d   Gb    1  Code  De   0x70
+    717  _initio                    0x10000ead   Gb    1  Code  Hi   0xd2
+    718  _terminateio               0x10000f7f   Gb    1  Code  Hi   0x38
+    719  __ARM_get_argv             0x10000fe5   Gb    1  Code  Hi   0x108
+    720  _sys_command_string        0x100010ed   Gb    1  Code  Hi   0x18
+    721  __rt_ctype_table           0x10001105   Gb    1  Code  De   0x10
+    722  __use_no_heap_region       0x10001115   Gb    1  Code  Hi   0x2
+    723  __heap_region$guard        0x10001117   Gb    1  Code  Hi   0x2
+    724  __Heap_ProvideMemory       0x10001119   Gb    1  Code  De   0x34
+    725  _maybe_terminate_alloc     0x10001119   Gb    1  Code  Hi 
+    726  _printf_char_common        0x10001157   Gb    1  Code  De   0x20
+    727  _strtoul                   0x1000117d   Gb    1  Code  De   0x9e
+    728  ferror                     0x1000121b   Gb    1  Code  De   0x8
+    729  __flsbuf                   0x10001223   Gb    1  Code  De   0x1e2
+    730  __flsbuf_byte              0x10001223   Gb    1  Code  De 
+    731  __flsbuf_wide              0x10001223   Gb    1  Code  De 
+    732  setvbuf                    0x10001405   Gb    1  Code  De   0x46
+    733  freopen                    0x1000144d   Gb    1  Code  De   0xa0
+    734  fopen                      0x100014ed   Gb    1  Code  De   0x4a
+    735  _fclose_internal           0x1000153d   Gb    1  Code  De   0x4c
+    736  fclose                     0x1000153d   Gb    1  Code  De 
+    737  __rt_SIGRTRED              0x10001589   Gb    1  Code  De   0xe
+    738  __rt_SIGRTMEM              0x10001597   Gb    1  Code  Hi   0xe
+    739  _sys_open                  0x100015a5   Gb    1  Code  De   0x14
+    740  _sys_close                 0x100015b9   Gb    1  Code  De   0xc
+    741  _sys_write                 0x100015c5   Gb    1  Code  De   0x10
+    742  _sys_read                  0x100015d5   Gb    1  Code  De   0xe
+    743  _sys_istty                 0x100015e3   Gb    1  Code  De   0xc
+    744  _sys_seek                  0x100015ef   Gb    1  Code  De   0xe
+    745  _sys_ensure                0x100015fd   Gb    1  Code  De   0x2
+    746  _sys_flen                  0x100015ff   Gb    1  Code  De   0xc
+    747  _sys_exit                  0x1000160d   Gb    1  Code  De   0x8
+    748  __I$use$semihosting        0x10001619   Gb    1  Code  Hi 
+    749  __use_no_semihosting_swi   0x10001619   Gb    1  Code  Hi   0x2
+    750  __semihosting_library_function
+                                    0x1000161b   Gb    1  Code  Hi 
+    751  __rt_locale                0x1000161d   Gb    1  Code  De   0x8
+    752  _chval                     0x10001625   Gb    1  Code  De   0x1c
+    753  _fseek                     0x10001641   Gb    1  Code  De   0xf2
+    754  fseek                      0x10001641   Gb    1  Code  De 
+    755  _seterr                    0x10001739   Gb    1  Code  De   0x14
+    756  _writebuf                  0x1000174d   Gb    1  Code  De   0x6c
+    757  _fflush                    0x100017b9   Gb    1  Code  De   0x46
+    758  _deferredlazyseek          0x100017ff   Gb    1  Code  De   0x3c
+    759  __sig_exit                 0x10001841   Gb    1  Code  De   0xa
+    760  __rt_SIGRTRED_inner        0x1000184d   Gb    1  Code  De   0xe
+    761  __rt_SIGRTMEM_inner        0x10001881   Gb    1  Code  De   0x16
+    762  _ftell_internal            0x100018d1   Gb    1  Code  De   0x42
+    763  ftell                      0x100018d1   Gb    1  Code  De 
+    764  __default_signal_display   0x10001913   Gb    1  Code  De   0x32
+    765  strlen                     0x10001945   Gb    1  Code  De   0x3e
+    766  strcmp                     0x10001989   Gb    1  Code  De   0x7c
+    767  _ttywrch                   0x10001a05   Gb    1  Code  De   0xe
+    768  BRIDGE_ERROR_Handler       0x10001a15   Wk    1  Code  Hi   0x2
+    769  BusFault_Handler           0x10001a19   Wk    1  Code  Hi   0x2
+    770  CPU0_PPU_Handler           0x10001a1d   Wk    1  Code  Hi   0x2
+    771  CTI_REQ0_IRQHandler        0x10001a21   Wk    1  Code  Hi   0x2
+    772  CTI_REQ1_IRQHandler        0x10001a25   Wk    1  Code  Hi   0x2
+    773  DEBUG_PPU_Handler          0x10001a29   Wk    1  Code  Hi   0x2
+    774  DebugMon_Handler           0x10001a2d   Wk    1  Code  Hi   0x2
+    775  ETHERNET_Handler           0x10001a31   Wk    1  Code  Hi   0x2
+    776  ETHOS_U55_Handler          0x10001a35   Wk    1  Code  Hi   0x2
+    777  GPIO0_0_Handler            0x10001a39   Wk    1  Code  Hi   0x2
+    778  GPIO0_10_Handler           0x10001a3d   Wk    1  Code  Hi   0x2
+    779  GPIO0_11_Handler           0x10001a41   Wk    1  Code  Hi   0x2
+    780  GPIO0_12_Handler           0x10001a45   Wk    1  Code  Hi   0x2
+    781  GPIO0_13_Handler           0x10001a49   Wk    1  Code  Hi   0x2
+    782  GPIO0_14_Handler           0x10001a4d   Wk    1  Code  Hi   0x2
+    783  GPIO0_15_Handler           0x10001a51   Wk    1  Code  Hi   0x2
+    784  GPIO0_1_Handler            0x10001a55   Wk    1  Code  Hi   0x2
+    785  GPIO0_2_Handler            0x10001a59   Wk    1  Code  Hi   0x2
+    786  GPIO0_3_Handler            0x10001a5d   Wk    1  Code  Hi   0x2
+    787  GPIO0_4_Handler            0x10001a61   Wk    1  Code  Hi   0x2
+    788  GPIO0_5_Handler            0x10001a65   Wk    1  Code  Hi   0x2
+    789  GPIO0_6_Handler            0x10001a69   Wk    1  Code  Hi   0x2
+    790  GPIO0_7_Handler            0x10001a6d   Wk    1  Code  Hi   0x2
+    791  GPIO0_8_Handler            0x10001a71   Wk    1  Code  Hi   0x2
+    792  GPIO0_9_Handler            0x10001a75   Wk    1  Code  Hi   0x2
+    793  GPIO0_Combined_Handler     0x10001a79   Wk    1  Code  Hi   0x2
+    794  GPIO1_0_Handler            0x10001a7d   Wk    1  Code  Hi   0x2
+    795  GPIO1_10_Handler           0x10001a81   Wk    1  Code  Hi   0x2
+    796  GPIO1_11_Handler           0x10001a85   Wk    1  Code  Hi   0x2
+    797  GPIO1_12_Handler           0x10001a89   Wk    1  Code  Hi   0x2
+    798  GPIO1_13_Handler           0x10001a8d   Wk    1  Code  Hi   0x2
+    799  GPIO1_14_Handler           0x10001a91   Wk    1  Code  Hi   0x2
+    800  GPIO1_15_Handler           0x10001a95   Wk    1  Code  Hi   0x2
+    801  GPIO1_1_Handler            0x10001a99   Wk    1  Code  Hi   0x2
+    802  GPIO1_2_Handler            0x10001a9d   Wk    1  Code  Hi   0x2
+    803  GPIO1_3_Handler            0x10001aa1   Wk    1  Code  Hi   0x2
+    804  GPIO1_4_Handler            0x10001aa5   Wk    1  Code  Hi   0x2
+    805  GPIO1_5_Handler            0x10001aa9   Wk    1  Code  Hi   0x2
+    806  GPIO1_6_Handler            0x10001aad   Wk    1  Code  Hi   0x2
+    807  GPIO1_7_Handler            0x10001ab1   Wk    1  Code  Hi   0x2
+    808  GPIO1_8_Handler            0x10001ab5   Wk    1  Code  Hi   0x2
+    809  GPIO1_9_Handler            0x10001ab9   Wk    1  Code  Hi   0x2
+    810  GPIO1_Combined_Handler     0x10001abd   Wk    1  Code  Hi   0x2
+    811  GPIO2_0_Handler            0x10001ac1   Wk    1  Code  Hi   0x2
+    812  GPIO2_10_Handler           0x10001ac5   Wk    1  Code  Hi   0x2
+    813  GPIO2_11_Handler           0x10001ac9   Wk    1  Code  Hi   0x2
+    814  GPIO2_12_Handler           0x10001acd   Wk    1  Code  Hi   0x2
+    815  GPIO2_13_Handler           0x10001ad1   Wk    1  Code  Hi   0x2
+    816  GPIO2_14_Handler           0x10001ad5   Wk    1  Code  Hi   0x2
+    817  GPIO2_15_Handler           0x10001ad9   Wk    1  Code  Hi   0x2
+    818  GPIO2_1_Handler            0x10001add   Wk    1  Code  Hi   0x2
+    819  GPIO2_2_Handler            0x10001ae1   Wk    1  Code  Hi   0x2
+    820  GPIO2_3_Handler            0x10001ae5   Wk    1  Code  Hi   0x2
+    821  GPIO2_4_Handler            0x10001ae9   Wk    1  Code  Hi   0x2
+    822  GPIO2_5_Handler            0x10001aed   Wk    1  Code  Hi   0x2
+    823  GPIO2_6_Handler            0x10001af1   Wk    1  Code  Hi   0x2
+    824  GPIO2_7_Handler            0x10001af5   Wk    1  Code  Hi   0x2
+    825  GPIO2_8_Handler            0x10001af9   Wk    1  Code  Hi   0x2
+    826  GPIO2_9_Handler            0x10001afd   Wk    1  Code  Hi   0x2
+    827  GPIO2_Combined_Handler     0x10001b01   Wk    1  Code  Hi   0x2
+    828  GPIO3_0_Handler            0x10001b05   Wk    1  Code  Hi   0x2
+    829  GPIO3_1_Handler            0x10001b09   Wk    1  Code  Hi   0x2
+    830  GPIO3_2_Handler            0x10001b0d   Wk    1  Code  Hi   0x2
+    831  GPIO3_3_Handler            0x10001b11   Wk    1  Code  Hi   0x2
+    832  GPIO3_Combined_Handler     0x10001b15   Wk    1  Code  Hi   0x2
+    833  HardFault_Handler          0x10001b19   Wk    1  Code  Hi   0x2
+    834  I2S_Handler                0x10001b1d   Wk    1  Code  Hi   0x2
+    835  MGMT_PPU_Handler           0x10001b21   Wk    1  Code  Hi   0x2
+    836  MPC_Handler                0x10001b25   Wk    1  Code  Hi   0x2
+    837  MSC_Handler                0x10001b29   Wk    1  Code  Hi   0x2
+    838  MemManage_Handler          0x10001b2d   Wk    1  Code  Hi   0x2
+    839  NMI_Handler                0x10001b31   Wk    1  Code  Hi   0x2
+    840  NONSEC_WATCHDOG_Handler    0x10001b35   Wk    1  Code  Hi   0x2
+    841  NONSEC_WATCHDOG_RESET_Handler
+                                    0x10001b39   Wk    1  Code  Hi   0x2
+    842  PPC_Handler                0x10001b3d   Wk    1  Code  Hi   0x2
+    843  PendSV_Handler             0x10001b41   Wk    1  Code  Hi   0x2
+    844  Reset_Handler              0x10001b45   Gb    1  Code  Hi   0x14
+    845  SLOWCLK_Timer_Handler      0x10001b59   Wk    1  Code  Hi   0x2
+    846  SPI_ADC_Handler            0x10001b5d   Wk    1  Code  Hi   0x2
+    847  SPI_SHIELD0_Handler        0x10001b61   Wk    1  Code  Hi   0x2
+    848  SPI_SHIELD1_Handler        0x10001b65   Wk    1  Code  Hi   0x2
+    849  SVC_Handler                0x10001b69   Wk    1  Code  Hi   0x2
+    850  SYS_PPU_Handler            0x10001b6d   Wk    1  Code  Hi   0x2
+    851  SecureFault_Handler        0x10001b71   Wk    1  Code  Hi   0x2
+    852  $Super$$SysTick_Handler    0x10001b75   Gb    1  Code  Hi   0x2
+    853  SystemCoreClockUpdate      0x10001b79   Gb    1  Code  Hi   0x1e
+    854  SystemInit                 0x10001b99   Gb    1  Code  Hi   0x3e
+    855  System_Timestamp_Counter_Handler
+                                    0x10001bd9   Wk    1  Code  Hi   0x2
+    856  TIMER0_Handler             0x10001bdd   Wk    1  Code  Hi   0x2
+    857  TIMER1_Handler             0x10001be1   Wk    1  Code  Hi   0x2
+    858  TIMER2_Handler             0x10001be5   Wk    1  Code  Hi   0x2
+    859  TIMER3_Handler             0x10001be9   Wk    1  Code  Hi   0x2
+    860  TOUCH_SCREEN_Handler       0x10001bed   Wk    1  Code  Hi   0x2
+    861  UART0_Combined_Handler     0x10001bf1   Wk    1  Code  Hi   0x2
+    862  UART1_Combined_Handler     0x10001bf5   Wk    1  Code  Hi   0x2
+    863  UART2_Combined_Handler     0x10001bf9   Wk    1  Code  Hi   0x2
+    864  UART3_Combined_Handler     0x10001bfd   Wk    1  Code  Hi   0x2
+    865  UART4_Combined_Handler     0x10001c01   Wk    1  Code  Hi   0x2
+    866  UART5_Handler              0x10001c05   Wk    1  Code  Hi   0x2
+    867  UARTOVF_Handler            0x10001c09   Wk    1  Code  Hi   0x2
+    868  UARTRX0_Handler            0x10001c0d   Wk    1  Code  Hi   0x2
+    869  UARTRX1_Handler            0x10001c11   Wk    1  Code  Hi   0x2
+    870  UARTRX2_Handler            0x10001c15   Wk    1  Code  Hi   0x2
+    871  UARTRX3_Handler            0x10001c19   Wk    1  Code  Hi   0x2
+    872  UARTRX4_Handler            0x10001c1d   Wk    1  Code  Hi   0x2
+    873  UARTRX5_Handler            0x10001c21   Wk    1  Code  Hi   0x2
+    874  UARTTX0_Handler            0x10001c25   Wk    1  Code  Hi   0x2
+    875  UARTTX1_Handler            0x10001c29   Wk    1  Code  Hi   0x2
+    876  UARTTX2_Handler            0x10001c2d   Wk    1  Code  Hi   0x2
+    877  UARTTX3_Handler            0x10001c31   Wk    1  Code  Hi   0x2
+    878  UARTTX4_Handler            0x10001c35   Wk    1  Code  Hi   0x2
+    879  UARTTX5_Handler            0x10001c39   Wk    1  Code  Hi   0x2
+    880  USB_Handler                0x10001c3d   Wk    1  Code  Hi   0x2
+    881  UsageFault_Handler         0x10001c41   Wk    1  Code  Hi   0x2
+    882  __perf_counter_init        0x10001c45   Gb    1  Code  Hi   0x30
+    883  __perf_os_patch_init       0x10001c85   Wk    1  Code  Hi   0x2
+    884  arm_absmax_f32             0x10001e41   Gb    1  Code  Hi   0x60
+    885  arm_add_f32                0x10001ea5   Gb    1  Code  Hi   0x42
+    886  arm_cfft_f32               0x10001ef1   Gb    1  Code  Hi   0x6e0
+    887  arm_cfft_init_f32          0x10002601   Gb    1  Code  Hi   0x2de
+    888  arm_cmplx_conj_f32         0x100028e1   Gb    1  Code  Hi   0x40
+    889  arm_cmplx_dot_prod_f32     0x10002931   Gb    1  Code  Hi   0xda
+    890  arm_cmplx_mag_f32          0x10002a0d   Gb    1  Code  Hi   0xea
+    891  arm_cmplx_mult_cmplx_f32   0x10002af9   Gb    1  Code  Hi   0xfa
+    892  arm_float_to_q15           0x10002bf5   Gb    1  Code  Hi   0xf8
+    893  arm_mult_f32               0x10002cf1   Gb    1  Code  Hi   0x42
+    894  arm_q15_to_float           0x10002d35   Gb    1  Code  Hi   0x3a
+    895  arm_rfft_fast_init_f32     0x10003141   Gb    1  Code  Hi   0x9a
+    896  arm_sub_f32                0x100031dd   Gb    1  Code  Hi   0x42
+    897  ee_abf_f32                 0x10003221   Gb    1  Code  Hi   0x1620
+    898  get_system_ticks           0x10004841   Gb    1  Code  Hi   0x38
+    899  init_cycle_counter         0x1000487d   Gb    1  Code  Hi   0x44
+    900  main                       0x100048d9   Gb    1  Code  Hi   0x210
+    901  platform_init              0x10004b79   Gb    1  Code  Hi   0x1ec
+    902  th_absmax_f32              0x10004d65   Gb    1  Code  Hi   0x4
+    903  th_add_f32                 0x10004d69   Gb    1  Code  Hi   0x4
+    904  th_cfft_f32                0x10004d6d   Gb    1  Code  Hi   0x4
+    905  th_cfft_init_f32           0x10004d71   Gb    1  Code  Hi   0x10
+    906  th_cmplx_conj_f32          0x10004d81   Gb    1  Code  Hi   0x4
+    907  th_cmplx_dot_prod_f32      0x10004d85   Gb    1  Code  Hi   0xc
+    908  th_cmplx_mag_f32           0x10004d91   Gb    1  Code  Hi   0x4
+    909  th_cmplx_mult_cmplx_f32    0x10004d95   Gb    1  Code  Hi   0x4
+    910  th_f32_to_int16            0x10004d99   Gb    1  Code  Hi   0x4
+    911  th_int16_to_f32            0x10004d9d   Gb    1  Code  Hi   0x4
+    912  th_multiply_f32            0x10004da1   Gb    1  Code  Hi   0x4
+    913  th_rfft_init_f32           0x10004da5   Gb    1  Code  Hi   0x10
+    914  th_subtract_f32            0x10004db5   Gb    1  Code  Hi   0x4
+    915  update_perf_counter        0x10004db9   Gb    1  Code  Hi   0x44
+    916  user_code_insert_to_systick_handler
+                                    0x10004e0d   Gb    1  Code  Hi   0x64
+    917  fputc                      0x10004e91   Gb    1  Code  De   0x1c
+    918  _get_lc_ctype              0x10004ead   Gb    1  Code  De   0x2c
+    919  _fp_init                   0x10004ed9   Gb    1  Code  De   0x1e
+    920  __fplib_config_fpu_vfp     0x10004ef5   Gb    1  Code  De 
+    921  __fplib_config_pureend_doubles
+                                    0x10004ef5   Gb    1  Code  De 
+    922  p_channel1                 0x10004ef6   Gb    1  Data  Hi   0xd000
+    923  p_channel2                 0x10011ef6   Gb    1  Data  Hi   0xd000
+    924  p_expected                 0x1001eef6   Gb    1  Data  Hi   0xd000
+    925  Region$$Table$$Base        0x1002bef8   Gb    1   --   Hi 
+    926  Region$$Table$$Limit       0x1002bf28   Gb    1   --   Hi 
+    927  __stdin_name               0x30000000   Gb    4  Data  De   0x4
+    928  __stdout_name              0x30000004   Gb    4  Data  De   0x4
+    929  __stderr_name              0x30000008   Gb    4  Data  De   0x4
+    930  armBitRevIndexTable_fixed_1024
+                                    0x3000000c   Gb    4  Data  Hi   0x7c0
+    931  armBitRevIndexTable_fixed_128
+                                    0x300007cc   Gb    4  Data  Hi   0xe0
+    932  armBitRevIndexTable_fixed_16
+                                    0x300008ac   Gb    4  Data  Hi   0x18
+    933  armBitRevIndexTable_fixed_2048
+                                    0x300008c4   Gb    4  Data  Hi   0xf80
+    934  armBitRevIndexTable_fixed_256
+                                    0x30001844   Gb    4  Data  Hi   0x1e0
+    935  armBitRevIndexTable_fixed_32
+                                    0x30001a24   Gb    4  Data  Hi   0x30
+    936  armBitRevIndexTable_fixed_4096
+                                    0x30001a54   Gb    4  Data  Hi   0x1f80
+    937  armBitRevIndexTable_fixed_512
+                                    0x300039d4   Gb    4  Data  Hi   0x3c0
+    938  armBitRevIndexTable_fixed_64
+                                    0x30003d94   Gb    4  Data  Hi   0x70
+    939  rearranged_twiddle_stride1_1024_f32
+                                    0x30003e04   Gb    4  Data  Hi   0xaa0
+    940  rearranged_twiddle_stride1_16_f32
+                                    0x300048a4   Gb    4  Data  Hi   0x20
+    941  rearranged_twiddle_stride1_256_f32
+                                    0x300048c4   Gb    4  Data  Hi   0x2a0
+    942  rearranged_twiddle_stride1_4096_f32
+                                    0x30004b64   Gb    4  Data  Hi   0x2aa0
+    943  rearranged_twiddle_stride1_64_f32
+                                    0x30007604   Gb    4  Data  Hi   0xa0
+    944  rearranged_twiddle_stride2_1024_f32
+                                    0x300076a4   Gb    4  Data  Hi   0xaa0
+    945  rearranged_twiddle_stride2_16_f32
+                                    0x30008144   Gb    4  Data  Hi   0x20
+    946  rearranged_twiddle_stride2_256_f32
+                                    0x30008164   Gb    4  Data  Hi   0x2a0
+    947  rearranged_twiddle_stride2_4096_f32
+                                    0x30008404   Gb    4  Data  Hi   0x2aa0
+    948  rearranged_twiddle_stride2_64_f32
+                                    0x3000aea4   Gb    4  Data  Hi   0xa0
+    949  rearranged_twiddle_stride3_1024_f32
+                                    0x3000af44   Gb    4  Data  Hi   0xaa0
+    950  rearranged_twiddle_stride3_16_f32
+                                    0x3000b9e4   Gb    4  Data  Hi   0x20
+    951  rearranged_twiddle_stride3_256_f32
+                                    0x3000ba04   Gb    4  Data  Hi   0x2a0
+    952  rearranged_twiddle_stride3_64_f32
+                                    0x3000bca4   Gb    4  Data  Hi   0xa0
+    953  rearranged_twiddle_tab_stride1_arr_1024_f32
+                                    0x3000bd44   Gb    4  Data  Hi   0x14
+    954  rearranged_twiddle_tab_stride1_arr_16_f32
+                                    0x3000bd58   Gb    4  Data  Hi   0x8
+    955  rearranged_twiddle_tab_stride1_arr_256_f32
+                                    0x3000bd60   Gb    4  Data  Hi   0x10
+    956  rearranged_twiddle_tab_stride1_arr_4096_f32
+                                    0x3000bd70   Gb    4  Data  Hi   0x18
+    957  rearranged_twiddle_tab_stride1_arr_64_f32
+                                    0x3000bd88   Gb    4  Data  Hi   0xc
+    958  rearranged_twiddle_tab_stride2_arr_1024_f32
+                                    0x3000bd94   Gb    4  Data  Hi   0x14
+    959  rearranged_twiddle_tab_stride2_arr_16_f32
+                                    0x3000bda8   Gb    4  Data  Hi   0x8
+    960  rearranged_twiddle_tab_stride2_arr_256_f32
+                                    0x3000bdb0   Gb    4  Data  Hi   0x10
+    961  rearranged_twiddle_tab_stride2_arr_4096_f32
+                                    0x3000bdc0   Gb    4  Data  Hi   0x18
+    962  rearranged_twiddle_tab_stride2_arr_64_f32
+                                    0x3000bdd8   Gb    4  Data  Hi   0xc
+    963  rearranged_twiddle_tab_stride3_arr_1024_f32
+                                    0x3000bde4   Gb    4  Data  Hi   0x14
+    964  rearranged_twiddle_tab_stride3_arr_16_f32
+                                    0x3000bdf8   Gb    4  Data  Hi   0x8
+    965  rearranged_twiddle_tab_stride3_arr_256_f32
+                                    0x3000be00   Gb    4  Data  Hi   0x10
+    966  rearranged_twiddle_tab_stride3_arr_4096_f32
+                                    0x3000be10   Gb    4  Data  Hi   0x18
+    967  rearranged_twiddle_tab_stride3_arr_64_f32
+                                    0x3000be28   Gb    4  Data  Hi   0xc
+    968  rotation                   0x3000be34   Gb    4  Data  Hi   0x4000
+    969  twiddleCoef_1024           0x3000fe80   Gb    4  Data  Hi   0x2000
+    970  twiddleCoef_128            0x30011e80   Gb    4  Data  Hi   0x400
+    971  twiddleCoef_16             0x30012280   Gb    4  Data  Hi   0x80
+    972  twiddleCoef_2048           0x30012300   Gb    4  Data  Hi   0x4000
+    973  twiddleCoef_256            0x30016300   Gb    4  Data  Hi   0x800
+    974  twiddleCoef_32             0x30016b00   Gb    4  Data  Hi   0x100
+    975  twiddleCoef_4096           0x30016c00   Gb    4  Data  Hi   0x8000
+    976  twiddleCoef_512            0x3001ec00   Gb    4  Data  Hi   0x1000
+    977  twiddleCoef_64             0x3001fc00   Gb    4  Data  Hi   0x200
+    978  twiddleCoef_rfft_1024      0x3001fe00   Gb    4  Data  Hi   0x1000
+    979  twiddleCoef_rfft_128       0x30020e00   Gb    4  Data  Hi   0x200
+    980  twiddleCoef_rfft_2048      0x30021000   Gb    4  Data  Hi   0x2000
+    981  twiddleCoef_rfft_256       0x30023000   Gb    4  Data  Hi   0x400
+    982  twiddleCoef_rfft_32        0x30023400   Gb    4  Data  Hi   0x80
+    983  twiddleCoef_rfft_4096      0x30023480   Gb    4  Data  Hi   0x4000
+    984  twiddleCoef_rfft_512       0x30027480   Gb    4  Data  Hi   0x800
+    985  twiddleCoef_rfft_64        0x30027c80   Gb    4  Data  Hi   0x100
+    986  w_hanning_div2             0x30027d80   Gb    4  Data  Hi   0x200
+    987  __ctype                    0x30027f8d   Gb    4  Data  De 
+    988  SHT$$INIT_ARRAY$$Base      0x30028090   Gb    4   --   Hi 
+    989  SHT$$INIT_ARRAY$$Limit     0x30028098   Gb    4   --   Hi 
+    990  __aeabi_stdin              0x30028098   Gb    5  Data  De   0x4
+    991  __aeabi_stdout             0x3002809c   Gb    5  Data  De   0x4
+    992  __aeabi_stderr             0x300280a0   Gb    5  Data  De   0x4
+    993  SystemCoreClock            0x300280a4   Gb    5  Data  Hi   0x4
+    994  PeripheralClock            0x300280a8   Gb    5  Data  Hi   0x4
+    995  rearranged_twiddle_stride3_4096_f32
+                                    0x300280ac   Gb    5  Data  Hi   0x2aa0
+    996  __stdin                    0x3002ab58   Gb    6  Data  De   0x54
+    997  __stdout                   0x3002abac   Gb    6  Data  De   0x54
+    998  __stderr                   0x3002ac00   Gb    6  Data  De   0x54
+    999  __libspace_start           0x3002ac54   Gb    6  Data  De   0x60
+    1000  __temporary_stack_top$libspace
+                                    0x3002acb4   Gb    6  Data  De 
+    1001  g_lLastTimeStamp           0x3002acb8   Gb    6  Data  Hi   0x8
+    1002  g_nOffset                  0x3002acc0   Gb    6  Data  Hi   0x4
+    1003  Image$$ARM_LIB_HEAP$$ZI$$Base
+                                    0x3002b310   Gb  Abs   --   Hi 
+    1004  Image$$ARM_LIB_HEAP$$ZI$$Limit
+                                    0x3006b310   Gb  Abs   --   Hi 
+    1005  Image$$ARM_LIB_STACK$$ZI$$Base
+                                    0x3006b320   Gb  Abs   --   Hi 
+    1006  Image$$ARM_LIB_STACK$$ZI$$Limit
+                                    0x3007b320   Gb  Abs   --   Hi 
+
+
+** Section #18 '.strtab' (SHT_STRTAB)
+    Size   : 14864 bytes
+
+
+** Section #19 '.note' (SHT_NOTE)
+    Size   : 52 bytes (alignment 4)
+
+
+** Section #20 '.comment' (SHT_PROGBITS)
+    Size   : 4740 bytes
+
+
+** Section #21 '.shstrtab' (SHT_STRTAB)
+    Size   : 248 bytes
+
+
