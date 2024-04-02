@@ -7,7 +7,7 @@
 
 ## Programming reference
 
-- [Arm Helium Technology M-Profile Vector Extension (MVE) for Arm Cortex-M Processor (reference book)](https://www.arm.com/resources/ebook/helium-mve-reference-book)
+- [Arm Helium Technology M-Profile Vector Extension (MVE) for Arm Cortex-M Processor (reference book)](https://www.arm.com/resources/ebook/helium-mve-reference-book), [pdf](https://github.com/arm-university/Arm-Helium-Technology/blob/main/HeliumTechnology_referencebook.pdf)
 - [MVE Intrinsics](https://developer.arm.com/architectures/instruction-sets/intrinsics/#f:@navigationhierarchiessimdisa=[Helium])
 - [Introduction to Helium](https://developer.arm.com/documentation/102102/0103/?lang=en)
 - [Helium Programmers Guide Coding for Helium](https://developer.arm.com/documentation/102095/0101/?lang=en)
