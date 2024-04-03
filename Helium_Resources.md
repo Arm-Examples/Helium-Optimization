@@ -15,11 +15,19 @@
 - [Getting started with Armv8.1-M based processor: software development hints and tips](https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/armv8_2d00_m-based-processor-software-development-hints-and-tips)
 - [Armv8.1-M Performance Monitor User Guide](https://developer.arm.com/documentation/arm051-799564642-251/latest)
 
+## Cortex-M52 references
+
+- [Technical Reference Manual](https://developer.arm.com/documentation/102776/0002/)
+- [Newsroom: Arm Extends Cortex-M Portfolio to Bring AI to the Smallest Endpoint Devices​](https://newsroom.arm.com/news/arm-cortex-m52)
+- [Blog: Arm Cortex-M52: a new milestone for efficient AIoT microcontrollers](https://community.arm.com/arm-community-blogs/b/internet-of-things-blog/posts/introducing-cortex-m52)
+
 ## Cortex-M55 references
 
 - [Introduction to the Arm Cortex-M55 Processor](https://armkeil.blob.core.windows.net/developer/Files/pdf/white-paper/introduction-to-arm-cortex-m55-processor.pdf)
 - [Cortex-M55 product brief](https://armkeil.blob.core.windows.net/developer/Files/pdf/AI/Arm-Cortex-M55-Product-Brief.pdf)
 - [Blending DSP and ML features into a low-power general-purpose processor - how far can we go?](https://armkeil.blob.core.windows.net/developer/Files/pdf/white-paper/blending-dsp-and-ml-features-into-a-low-power-general-purpose-processor.pdf) ([Video - require registration](https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowUUID=3B24ECCD-AFBC-4117-A6AB-A3441086B3C3&AffiliateData=arm))
+- [Software Optimization Guide](https://developer.arm.com/documentation/102692/latest/)
+
 - [Keil Application Note 329 - Get started with Arm Cortex-M55](https://developer.arm.com/documentation/kan329/latest/)
 - [Test drive the Arm®︎ Cortex®︎-M55 processor using the MPS3 FPGA platform](https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/test-drive-the-arm-cortex--m55-processor-using-the-mps3-fpga-platform)
 
