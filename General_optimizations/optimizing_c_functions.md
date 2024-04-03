@@ -68,6 +68,8 @@ Another possibility to make more vectorization possible is to unroll a loop. If 
 
 It is possible to mix both ideas : vectorizing by slicing the data and adding more vectorization possibilities by unrolling the loop.
 
+> **Note:** If the loop body is long/complex, unrolling the loop can make it harder for the compiler to spot opportunity for auto-vectorization.
+
 In the above examples, we could work on several rows or several columns at the same time
 
 If you work on several rows and columns of the data at the same time, it means you work of sub-rectangles. You may slice those sub-rectangles vertically or horizontally depending on what is making more sense for the algorithms.
@@ -91,6 +93,8 @@ Another possibility, when it makes sense, is to copy the non contiguous data int
 Unrolling a loop can be useful to reuse some data in several computations. In the example of the matrix multiply, if we were working row per row it would not be efficient since we would be reloading the same column too many times. If we work per packet of 4 rows (so 4 loop iterations at a time), we can reuse the column data.
 
 Unrolling a loop can be useful (as explained in previous section) to provide more flexibility in how you slice your data : sub-rectangles ...
+
+In other cases, you might see no benefit with loop unrolling. Do not forget that Armv8.1-M supports Low-Overhead Branch extension so the loop overhead is already minimized. In such case, unrolling loops can increase code size (which might lead to more cache misses) and might make it harder for the compiler to spot opportunity for autovectorization. As a result, you should test the codes to check if loop unrolling can really bring benefit(s).
 
 ## Helping the compiler (pragma, restrict keyword ...)
 
