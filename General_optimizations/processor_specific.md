@@ -6,7 +6,7 @@ For software developers that want to optimize code at low level, the following S
 
 - [Cortex-M85 Software Optimization Guide](https://developer.arm.com/documentation/107950/0100/)
 - [Cortex-M55 Software Optimization Guide](https://developer.arm.com/documentation/102692/latest/)
-- Cortex-M52 Software Optimization Guide: (REVISIT: Link not available yet)
+- Cortex-M52 Software Optimization Guide: (Coming soon)
 
 ## Instruction alignment
 
