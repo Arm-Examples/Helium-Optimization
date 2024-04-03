@@ -9,7 +9,7 @@ This repository contains topics related to software optimization for Arm Cortex-
   - [Optimizing C functions](./General_optimizations/optimizing_c_functions.md)
   - [Processor specific topics](./General_optimizations/processor_specific.md)
 - [Optimization for memory constrained devices](./Memory/Software_optimization_for_memory_constrained_devices.md)
-- Performance analysis
+- [Performance analysis](./Performance_analysis/ml-dsp-front-end-optimization-with-helium.md)
 - [Helium coding resources](Helium_Resources.md)
 
 This repository is still in development.
