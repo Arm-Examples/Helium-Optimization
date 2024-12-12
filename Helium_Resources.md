@@ -20,6 +20,7 @@
 - [Technical Reference Manual](https://developer.arm.com/documentation/102776/0002/)
 - [Newsroom: Arm Extends Cortex-M Portfolio to Bring AI to the Smallest Endpoint Devices​](https://newsroom.arm.com/news/arm-cortex-m52)
 - [Blog: Arm Cortex-M52: a new milestone for efficient AIoT microcontrollers](https://community.arm.com/arm-community-blogs/b/internet-of-things-blog/posts/introducing-cortex-m52)
+- [Software Optimization Guide](https://developer.arm.com/documentation/107730/0003)
 
 ## Cortex-M55 references
 
